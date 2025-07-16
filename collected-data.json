@@ -51,7 +51,7 @@
         "Patrocínios de apostas detectados",
         "Jogos populares no Brasil (Tigrinho, etc.)"
       ],
-      "last_update": "2025-07-16T16:29:53.839Z",
+      "last_update": "2025-07-16T17:39:54.016Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -64,12 +64,6 @@
             "description": ""
           },
           "recent_videos": [
-            {
-              "title": "A ESTREIA NÃO FOI COMO GOSTARÍAMOS... (VLOG 68)",
-              "published": "2025-07-15T23:48:30Z",
-              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus ▸Compre seus ...",
-              "videoId": "jy4ERcGVM-M"
-            },
             {
               "title": "EU VOLTEI (VLOG 67)",
               "published": "2025-07-14T23:41:28Z",
@@ -87,12 +81,6 @@
               "published": "2025-07-12T23:10:54Z",
               "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
               "videoId": "-gTf_TxBj4w"
-            },
-            {
-              "title": "O TOP #1 MUNDIAL NO PREMIER É REALMENTE LEGIT?? Precisei checar novamente...",
-              "published": "2025-07-11T23:48:59Z",
-              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
-              "videoId": "WgoQaYr2ZlA"
             },
             {
               "title": "FALLEN JOGANDO PREMIER REVELANDO SEU RANKING NO CS 2",
@@ -123,6 +111,18 @@
               "published": "2025-07-05T20:48:20Z",
               "description": "Minhas redes sociais: Twitter: @FalleNCS Instagram: @fallen.",
               "videoId": "9Q9aff3Mfxk"
+            },
+            {
+              "title": "NOVA PROMESSA DO CS ou CHEATER? ANALISANDO O NOVO TOP #1 MUNDIAL do PREMIER (Verdadeiro ou Cheat)",
+              "published": "2025-06-27T20:16:19Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus ▸Compre seus ...",
+              "videoId": "yDIrMwXWdUU"
+            },
+            {
+              "title": "PEGUEI A AWP DE NOVO PRA MATAR A SAUDADE E ESSE FOI O RESULTADO... (Pug com o YEKINDAR)",
+              "published": "2025-06-23T23:26:55Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus ▸Compre seus ...",
+              "videoId": "PJhjXqwA_48"
             }
           ],
           "sponsorship_analysis": {
@@ -138,7 +138,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:29:53.120Z",
+            "analysis_timestamp": "2025-07-16T17:39:53.109Z",
             "platform": "youtube"
           }
         },
@@ -167,7 +167,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:29:53.838Z",
+            "analysis_timestamp": "2025-07-16T17:39:54.015Z",
             "platform": "twitch"
           }
         },
@@ -194,13 +194,13 @@
               "public_metrics": {
                 "retweet_count": 104,
                 "reply_count": 56,
-                "like_count": 1441,
+                "like_count": 1452,
                 "quote_count": 0,
                 "bookmark_count": 5,
-                "impression_count": 89861
+                "impression_count": 90699
               },
               "retweets": 104,
-              "likes": 1441,
+              "likes": 1452,
               "replies": 56
             },
             {
@@ -213,7 +213,7 @@
                 "like_count": 11,
                 "quote_count": 0,
                 "bookmark_count": 0,
-                "impression_count": 3562
+                "impression_count": 3565
               },
               "retweets": 0,
               "likes": 11,
@@ -229,7 +229,7 @@
                 "like_count": 809,
                 "quote_count": 2,
                 "bookmark_count": 4,
-                "impression_count": 75662
+                "impression_count": 75703
               },
               "retweets": 179,
               "likes": 809,
@@ -245,7 +245,7 @@
                 "like_count": 163,
                 "quote_count": 0,
                 "bookmark_count": 0,
-                "impression_count": 17211
+                "impression_count": 17214
               },
               "retweets": 0,
               "likes": 163,
@@ -293,7 +293,7 @@
                 "like_count": 573,
                 "quote_count": 2,
                 "bookmark_count": 1,
-                "impression_count": 55953
+                "impression_count": 55957
               },
               "retweets": 15,
               "likes": 573,
@@ -309,7 +309,7 @@
                 "like_count": 323,
                 "quote_count": 0,
                 "bookmark_count": 0,
-                "impression_count": 10698
+                "impression_count": 10699
               },
               "retweets": 0,
               "likes": 323,
@@ -325,7 +325,7 @@
                 "like_count": 269,
                 "quote_count": 0,
                 "bookmark_count": 0,
-                "impression_count": 23465
+                "impression_count": 23466
               },
               "retweets": 0,
               "likes": 269,
@@ -390,7 +390,7 @@
             ],
             "has_disclosure": true,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:29:52.574Z",
+            "analysis_timestamp": "2025-07-16T17:39:52.561Z",
             "platform": "twitter"
           }
         }
@@ -419,7 +419,7 @@
           "id": "269503217",
           "login": "aspaszin",
           "display_name": "aspaszin",
-          "followers": 1010684,
+          "followers": 1010776,
           "views": 0,
           "description": "Campeão Mundial de VALORANT e Bicampeão do VCT AMERICAS.  - aspas@prodigy-agency.gg",
           "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/56adcee0-86f1-4ade-bcd9-8d9bde1c6670-profile_image-300x300.png"
@@ -428,7 +428,7 @@
           "id": "1202495657707266051",
           "username": "aspaszin",
           "name": "aspas final boss🌪️",
-          "followers": 447875,
+          "followers": 447873,
           "following": 372,
           "tweets": 2104,
           "likes": 27345,
@@ -443,7 +443,7 @@
       "risk_factors": [
         "Códigos promocionais identificados"
       ],
-      "last_update": "2025-07-16T16:29:57.910Z",
+      "last_update": "2025-07-16T17:39:57.846Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -530,7 +530,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:29:57.910Z",
+            "analysis_timestamp": "2025-07-16T17:39:57.845Z",
             "platform": "youtube"
           }
         },
@@ -540,7 +540,7 @@
             "id": "269503217",
             "login": "aspaszin",
             "display_name": "aspaszin",
-            "followers": 1010684,
+            "followers": 1010776,
             "views": 0,
             "description": "Campeão Mundial de VALORANT e Bicampeão do VCT AMERICAS.  - aspas@prodigy-agency.gg",
             "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/56adcee0-86f1-4ade-bcd9-8d9bde1c6670-profile_image-300x300.png"
@@ -549,49 +549,49 @@
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-15T23:17:04Z",
-              "view_count": 111987,
+              "view_count": 112074,
               "description": "",
               "id": "2513532280"
             },
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-15T01:19:05Z",
-              "view_count": 69489,
+              "view_count": 69495,
               "description": "",
               "id": "2512746154"
             },
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-13T22:08:31Z",
-              "view_count": 167153,
+              "view_count": 167155,
               "description": "",
               "id": "2511746092"
             },
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-13T00:18:35Z",
-              "view_count": 104256,
+              "view_count": 104259,
               "description": "",
               "id": "2510943382"
             },
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-12T17:44:31Z",
-              "view_count": 81455,
+              "view_count": 81457,
               "description": "",
               "id": "2510638798"
             },
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-10T16:52:19Z",
-              "view_count": 80030,
+              "view_count": 80033,
               "description": "",
               "id": "2508802520"
             },
             {
               "title": "BUY THE MIBR BUNDLE | !atk",
               "created_at": "2025-07-09T21:29:59Z",
-              "view_count": 250145,
+              "view_count": 250149,
               "description": "",
               "id": "2508144193"
             },
@@ -612,7 +612,7 @@
             {
               "title": "BUY THE MIBR BUNDLE |  MEU TECLADO SAIU!!!!!  ATK RS6 Ultra × ASPAS - Limited Edition  |  !atk",
               "created_at": "2025-05-23T00:34:41Z",
-              "view_count": 42871,
+              "view_count": 42872,
               "description": "",
               "id": "2465839513"
             }
@@ -683,7 +683,7 @@
             ],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:29:57.505Z",
+            "analysis_timestamp": "2025-07-16T17:39:57.671Z",
             "platform": "twitch"
           }
         },
@@ -693,7 +693,7 @@
             "id": "1202495657707266051",
             "username": "aspaszin",
             "name": "aspas final boss🌪️",
-            "followers": 447875,
+            "followers": 447873,
             "following": 372,
             "tweets": 2104,
             "likes": 27345,
@@ -716,7 +716,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:29:57.311Z",
+            "analysis_timestamp": "2025-07-16T17:39:57.487Z",
             "platform": "twitter"
           }
         }
@@ -745,7 +745,7 @@
           "id": "25116812",
           "login": "sacy",
           "display_name": "sacy",
-          "followers": 805161,
+          "followers": 805172,
           "views": 0,
           "description": "NÃO SEI O QUE ESCREVER AQUI DEPOIS EU FAÇO",
           "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5df0c5d3-9589-430f-82b7-72f51a25df4f-profile_image-300x300.png"
@@ -754,7 +754,7 @@
           "id": "2777390480",
           "username": "gustavosacy",
           "name": "Sacy",
-          "followers": 363416,
+          "followers": 363419,
           "following": 662,
           "tweets": 16204,
           "likes": 7614,
@@ -769,7 +769,7 @@
       "risk_factors": [
         "Códigos promocionais identificados"
       ],
-      "last_update": "2025-07-16T16:30:01.903Z",
+      "last_update": "2025-07-16T17:40:01.999Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -856,7 +856,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:01.903Z",
+            "analysis_timestamp": "2025-07-16T17:40:01.999Z",
             "platform": "youtube"
           }
         },
@@ -866,7 +866,7 @@
             "id": "25116812",
             "login": "sacy",
             "display_name": "sacy",
-            "followers": 805161,
+            "followers": 805172,
             "views": 0,
             "description": "NÃO SEI O QUE ESCREVER AQUI DEPOIS EU FAÇO",
             "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5df0c5d3-9589-430f-82b7-72f51a25df4f-profile_image-300x300.png"
@@ -875,35 +875,35 @@
             {
               "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
               "created_at": "2025-07-16T15:32:08Z",
-              "view_count": 5,
+              "view_count": 19,
               "description": "",
               "id": "2514068335"
             },
             {
               "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
               "created_at": "2025-07-15T15:14:19Z",
-              "view_count": 66498,
+              "view_count": 66501,
               "description": "",
               "id": "2513154109"
             },
             {
               "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
               "created_at": "2025-07-14T19:13:04Z",
-              "view_count": 90462,
+              "view_count": 90466,
               "description": "",
               "id": "2512454304"
             },
             {
               "title": "FNC vs TH (Grande Final / MD5) - EWC 2025",
               "created_at": "2025-07-13T10:24:07Z",
-              "view_count": 49029,
+              "view_count": 49031,
               "description": "",
               "id": "2511273569"
             },
             {
               "title": "MIBR Sacy / PRX vs FNC - EWC 2025",
               "created_at": "2025-07-12T09:20:48Z",
-              "view_count": 88062,
+              "view_count": 88063,
               "description": "",
               "id": "2510356185"
             },
@@ -924,7 +924,7 @@
             {
               "title": "MIBR Sacy / FERIADO TRYHARD NAS RANKEDS RADIANTE. - !mibr !noping !pix",
               "created_at": "2025-07-09T18:22:34Z",
-              "view_count": 57499,
+              "view_count": 57500,
               "description": "",
               "id": "2507997186"
             },
@@ -1064,7 +1064,7 @@
             ],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:01.591Z",
+            "analysis_timestamp": "2025-07-16T17:40:01.501Z",
             "platform": "twitch"
           }
         },
@@ -1074,7 +1074,7 @@
             "id": "2777390480",
             "username": "gustavosacy",
             "name": "Sacy",
-            "followers": 363416,
+            "followers": 363419,
             "following": 662,
             "tweets": 16204,
             "likes": 7614,
@@ -1097,7 +1097,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:01.303Z",
+            "analysis_timestamp": "2025-07-16T17:40:01.228Z",
             "platform": "twitter"
           }
         }
@@ -1136,7 +1136,7 @@
       "sponsorships": [],
       "risk_score": 0,
       "risk_factors": [],
-      "last_update": "2025-07-16T16:30:05.887Z",
+      "last_update": "2025-07-16T17:40:05.897Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -1162,7 +1162,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:05.887Z",
+            "analysis_timestamp": "2025-07-16T17:40:05.897Z",
             "platform": "youtube"
           }
         },
@@ -1191,7 +1191,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:05.566Z",
+            "analysis_timestamp": "2025-07-16T17:40:05.643Z",
             "platform": "twitch"
           }
         },
@@ -1221,7 +1221,7 @@
           "id": "31497918",
           "login": "brtt",
           "display_name": "brtt",
-          "followers": 1000170,
+          "followers": 1000172,
           "views": 0,
           "description": "",
           "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c70194ff-884e-4b35-9848-5fa3bcbd49e5-profile_image-300x300.png"
@@ -1231,7 +1231,7 @@
       "sponsorships": [],
       "risk_score": 0,
       "risk_factors": [],
-      "last_update": "2025-07-16T16:30:09.643Z",
+      "last_update": "2025-07-16T17:40:09.766Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -1270,7 +1270,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:09.643Z",
+            "analysis_timestamp": "2025-07-16T17:40:09.766Z",
             "platform": "youtube"
           }
         },
@@ -1280,7 +1280,7 @@
             "id": "31497918",
             "login": "brtt",
             "display_name": "brtt",
-            "followers": 1000170,
+            "followers": 1000172,
             "views": 0,
             "description": "",
             "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c70194ff-884e-4b35-9848-5fa3bcbd49e5-profile_image-300x300.png"
@@ -1289,49 +1289,49 @@
             {
               "title": "GAMER.",
               "created_at": "2025-07-16T13:26:59Z",
-              "view_count": 39,
+              "view_count": 73,
               "description": "",
               "id": "2513995463"
             },
             {
               "title": "GAMER.",
               "created_at": "2025-07-15T17:32:43Z",
-              "view_count": 30177,
+              "view_count": 30188,
               "description": "",
               "id": "2513253207"
             },
             {
               "title": "GAMER.",
               "created_at": "2025-07-15T15:57:30Z",
-              "view_count": 9214,
+              "view_count": 9216,
               "description": "",
               "id": "2513179851"
             },
             {
               "title": "GAMER.",
               "created_at": "2025-07-14T16:06:02Z",
-              "view_count": 44524,
+              "view_count": 44528,
               "description": "",
               "id": "2512312322"
             },
             {
               "title": "GAMER.",
               "created_at": "2025-07-13T19:11:17Z",
-              "view_count": 48317,
+              "view_count": 48318,
               "description": "",
               "id": "2511608994"
             },
             {
               "title": "GAMER.",
               "created_at": "2025-07-10T15:53:19Z",
-              "view_count": 56787,
+              "view_count": 56794,
               "description": "",
               "id": "2508762562"
             },
             {
               "title": "GAMER.",
               "created_at": "2025-07-09T13:35:57Z",
-              "view_count": 43945,
+              "view_count": 43947,
               "description": "",
               "id": "2507803270"
             },
@@ -1370,7 +1370,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:09.567Z",
+            "analysis_timestamp": "2025-07-16T17:40:09.571Z",
             "platform": "twitch"
           }
         },
@@ -1402,7 +1402,7 @@
       "sponsorships": [],
       "risk_score": 0,
       "risk_factors": [],
-      "last_update": "2025-07-16T16:30:13.526Z",
+      "last_update": "2025-07-16T17:40:13.732Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -1435,7 +1435,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:13.526Z",
+            "analysis_timestamp": "2025-07-16T17:40:13.732Z",
             "platform": "youtube"
           }
         },
@@ -1466,7 +1466,7 @@
           "id": "133926538",
           "login": "saadhak",
           "display_name": "Saadhak",
-          "followers": 426418,
+          "followers": 426417,
           "views": 0,
           "description": "VALORANT World Champion | Captain and IGL of Karmine Corp ",
           "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/d649d28a-98ea-407e-a973-96f39a03bbb5-profile_image-300x300.png"
@@ -1476,7 +1476,7 @@
       "sponsorships": [],
       "risk_score": 0,
       "risk_factors": [],
-      "last_update": "2025-07-16T16:30:17.562Z",
+      "last_update": "2025-07-16T17:40:17.672Z",
       "raw_data": {
         "youtube": {
           "platform": "youtube",
@@ -1563,7 +1563,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:17.561Z",
+            "analysis_timestamp": "2025-07-16T17:40:17.672Z",
             "platform": "youtube"
           }
         },
@@ -1573,7 +1573,7 @@
             "id": "133926538",
             "login": "saadhak",
             "display_name": "Saadhak",
-            "followers": 426418,
+            "followers": 426417,
             "views": 0,
             "description": "VALORANT World Champion | Captain and IGL of Karmine Corp ",
             "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/d649d28a-98ea-407e-a973-96f39a03bbb5-profile_image-300x300.png"
@@ -1582,7 +1582,7 @@
             {
               "title": "KC Saadhak | Oi amigos, voltei :)",
               "created_at": "2025-06-19T19:54:06Z",
-              "view_count": 10305,
+              "view_count": 10307,
               "description": "",
               "id": "2490483700"
             },
@@ -1642,7 +1642,7 @@
             "risk_factors": [],
             "has_disclosure": false,
             "compliance_score": 100,
-            "analysis_timestamp": "2025-07-16T16:30:17.254Z",
+            "analysis_timestamp": "2025-07-16T17:40:17.458Z",
             "platform": "twitch"
           }
         },
@@ -1695,7 +1695,7 @@
         "avg_risk": 0
       }
     },
-    "last_collection": "2025-07-16T16:30:20.572Z",
+    "last_collection": "2025-07-16T17:40:20.678Z",
     "collection_method": "multi_platform_api",
     "data_sources": [
       "youtube_api",
