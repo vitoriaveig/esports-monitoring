@@ -1,0 +1,1706 @@
+{
+  "athletes": [
+    {
+      "name": "Gabriel Toledo",
+      "nickname": "FalleN",
+      "game": "Counter-Strike",
+      "team": "Imperial",
+      "division": 1,
+      "youtube_username": "fallen",
+      "twitch_username": "fallen",
+      "twitter_username": "FalleNCS",
+      "playing_country": "BR",
+      "social_media": {
+        "youtube": {
+          "id": "UCZhYB1iqqaL2gUvs452yvsg",
+          "title": "fallenINSIDER",
+          "subscribers": 1420000,
+          "views": 238447534,
+          "videos": 1533,
+          "description": ""
+        },
+        "twitch": {
+          "id": "53907586",
+          "login": "fallen",
+          "display_name": "fallen",
+          "followers": 861,
+          "views": 0,
+          "description": "it/she falco from the 303 ^^",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/41898535-6be6-4490-ac03-dc9d42f8f7a1-profile_image-300x300.png"
+        },
+        "twitter": {
+          "id": "112897001",
+          "username": "FalleNCS",
+          "name": "Gabriel Toledo",
+          "followers": 1265738,
+          "following": 1557,
+          "tweets": 33225,
+          "likes": 26438,
+          "verified": false,
+          "description": "Professional CS:GO Player for @furia - Owner at @fallencompany - Contato: contatobr@fallen.gg",
+          "location": "",
+          "created_at": "2010-02-10T02:01:37.000Z"
+        }
+      },
+      "sponsorships": [
+        "crash",
+        "apoio"
+      ],
+      "risk_score": 12,
+      "risk_factors": [
+        "Patrocínios de apostas detectados",
+        "Jogos populares no Brasil (Tigrinho, etc.)"
+      ],
+      "last_update": "2025-07-16T16:29:53.839Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UCZhYB1iqqaL2gUvs452yvsg",
+            "title": "fallenINSIDER",
+            "subscribers": 1420000,
+            "views": 238447534,
+            "videos": 1533,
+            "description": ""
+          },
+          "recent_videos": [
+            {
+              "title": "A ESTREIA NÃO FOI COMO GOSTARÍAMOS... (VLOG 68)",
+              "published": "2025-07-15T23:48:30Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus ▸Compre seus ...",
+              "videoId": "jy4ERcGVM-M"
+            },
+            {
+              "title": "EU VOLTEI (VLOG 67)",
+              "published": "2025-07-14T23:41:28Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus ▸Compre seus ...",
+              "videoId": "VP4BnNIwsYo"
+            },
+            {
+              "title": "JOGANDO MINHA ÚLTIMA PARTIDA NO PREMIER ANTES DA NOVA TEMPORADA DO CS 2",
+              "published": "2025-07-13T23:17:23Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
+              "videoId": "853Inygygys"
+            },
+            {
+              "title": "FALLEN REAGE À SEU AUGE NO CS NA ÉPOCA DA SK (o melhor awper do mundo)",
+              "published": "2025-07-12T23:10:54Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
+              "videoId": "-gTf_TxBj4w"
+            },
+            {
+              "title": "O TOP #1 MUNDIAL NO PREMIER É REALMENTE LEGIT?? Precisei checar novamente...",
+              "published": "2025-07-11T23:48:59Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
+              "videoId": "WgoQaYr2ZlA"
+            },
+            {
+              "title": "FALLEN JOGANDO PREMIER REVELANDO SEU RANKING NO CS 2",
+              "published": "2025-07-10T23:45:53Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
+              "videoId": "gKlHyI33kBE"
+            },
+            {
+              "title": "FALLEN REAGE AO AUGE DO FER NO CS NA ÉPOCA DA SK (o jogador mais agressivo da geração)",
+              "published": "2025-07-09T22:37:24Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus Minhas redes sociais: ...",
+              "videoId": "uqVcUFC22xw"
+            },
+            {
+              "title": "DEPOIS DE ANOS FUI CAMPEÃO EM LAN COM FER DE NOVO (VLOG 66)",
+              "published": "2025-07-08T23:30:33Z",
+              "description": "Compra e troca de skins: https://skinsmonkey.com/pt/r/fallen * cupom FALLEN para ganhar 35% de bonus ▸Compre seus ...",
+              "videoId": "ldkYu9JaLJk"
+            },
+            {
+              "title": "FALLEN ENSINA SMOKES ESSENCIAS DA MIRAGE",
+              "published": "2025-07-08T19:00:54Z",
+              "description": "Minhas redes sociais: Twitter: @FalleNCS Instagram: @fallen.",
+              "videoId": "iu8SWoaePw4"
+            },
+            {
+              "title": "FALLEN ANALISA MELHOR TIME DO MUNDO E DESCOBRE OS SEGREDOS",
+              "published": "2025-07-05T20:48:20Z",
+              "description": "Minhas redes sociais: Twitter: @FalleNCS Instagram: @fallen.",
+              "videoId": "9Q9aff3Mfxk"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:29:53.120Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "53907586",
+            "login": "fallen",
+            "display_name": "fallen",
+            "followers": 861,
+            "views": 0,
+            "description": "it/she falco from the 303 ^^",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/41898535-6be6-4490-ac03-dc9d42f8f7a1-profile_image-300x300.png"
+          },
+          "recent_videos": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:29:53.838Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": {
+          "platform": "twitter",
+          "user_data": {
+            "id": "112897001",
+            "username": "FalleNCS",
+            "name": "Gabriel Toledo",
+            "followers": 1265738,
+            "following": 1557,
+            "tweets": 33225,
+            "likes": 26438,
+            "verified": false,
+            "description": "Professional CS:GO Player for @furia - Owner at @fallencompany - Contato: contatobr@fallen.gg",
+            "location": "",
+            "created_at": "2010-02-10T02:01:37.000Z"
+          },
+          "recent_tweets": [
+            {
+              "id": "1945168574579888297",
+              "text": "GG tugas wp\nVoltamos muy malo nesse primeiro jogo - amanhã será melhor\nVs Wildcard as 11AM aqui da Europa, 6AM do Brasil (me3)",
+              "created_at": "2025-07-15T17:08:22.000Z",
+              "public_metrics": {
+                "retweet_count": 104,
+                "reply_count": 56,
+                "like_count": 1441,
+                "quote_count": 0,
+                "bookmark_count": 5,
+                "impression_count": 89861
+              },
+              "retweets": 104,
+              "likes": 1441,
+              "replies": 56
+            },
+            {
+              "id": "1944520835441598766",
+              "text": "@Zacmoretos Parabens !!",
+              "created_at": "2025-07-13T22:14:29.000Z",
+              "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 11,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 3562
+              },
+              "retweets": 0,
+              "likes": 11,
+              "replies": 0
+            },
+            {
+              "id": "1942680616325243365",
+              "text": "Quem vendeu o João?",
+              "created_at": "2025-07-08T20:22:06.000Z",
+              "public_metrics": {
+                "retweet_count": 179,
+                "reply_count": 15,
+                "like_count": 809,
+                "quote_count": 2,
+                "bookmark_count": 4,
+                "impression_count": 75662
+              },
+              "retweets": 179,
+              "likes": 809,
+              "replies": 15
+            },
+            {
+              "id": "1941935515705414024",
+              "text": "@EditorJoe @donacsgo @FaZe_rainCS @Snowzincs @BLASTPremier @BLASTtv Nice",
+              "created_at": "2025-07-06T19:01:21.000Z",
+              "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 1,
+                "like_count": 163,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 17211
+              },
+              "retweets": 0,
+              "likes": 163,
+              "replies": 1
+            },
+            {
+              "id": "1941935351234220424",
+              "text": "RT @ferrer: E o CRASHERS está de volta!!! Muito obrigado @FalleNCS @ale_apoka @cogucs @mch_AGG @guerri pelo apoio! VAMOOOOOO Crashers!!! ht…",
+              "created_at": "2025-07-06T19:00:41.000Z",
+              "public_metrics": {
+                "retweet_count": 122,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 2
+              },
+              "retweets": 122,
+              "likes": 0,
+              "replies": 0
+            },
+            {
+              "id": "1941562412110578129",
+              "text": "RT @tonyramosgamer: 🚨Ô BENÇA! Acabou de sair uma entrevista de 48min com o MOLODOY no canal do Эрик Шоков e eu trago aqui mastigadinho pra…",
+              "created_at": "2025-07-05T18:18:46.000Z",
+              "public_metrics": {
+                "retweet_count": 113,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 4
+              },
+              "retweets": 113,
+              "likes": 0,
+              "replies": 0
+            },
+            {
+              "id": "1941330721374974359",
+              "text": "NT verdão",
+              "created_at": "2025-07-05T02:58:06.000Z",
+              "public_metrics": {
+                "retweet_count": 15,
+                "reply_count": 42,
+                "like_count": 573,
+                "quote_count": 2,
+                "bookmark_count": 1,
+                "impression_count": 55953
+              },
+              "retweets": 15,
+              "likes": 573,
+              "replies": 42
+            },
+            {
+              "id": "1941190690169655504",
+              "text": "@FURIA I’m ready",
+              "created_at": "2025-07-04T17:41:40.000Z",
+              "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 1,
+                "like_count": 323,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 10698
+              },
+              "retweets": 0,
+              "likes": 323,
+              "replies": 1
+            },
+            {
+              "id": "1941188482380202319",
+              "text": "@FURIA Quero",
+              "created_at": "2025-07-04T17:32:54.000Z",
+              "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 3,
+                "like_count": 269,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 23465
+              },
+              "retweets": 0,
+              "likes": 269,
+              "replies": 3
+            },
+            {
+              "id": "1941188446640611452",
+              "text": "RT @FURIA: Pra comemorar o primeiro #YEKINDAY oficial, lançamos o pin nº 01 da coleção #FURIACS - uma série limitada que contam a história…",
+              "created_at": "2025-07-04T17:32:45.000Z",
+              "public_metrics": {
+                "retweet_count": 45,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0,
+                "bookmark_count": 0,
+                "impression_count": 1
+              },
+              "retweets": 45,
+              "likes": 0,
+              "replies": 0
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 1,
+            "unique_sponsors": [
+              "crash",
+              "apoio"
+            ],
+            "total_sponsor_mentions": 2,
+            "sponsorship_evidence": [
+              {
+                "video": {
+                  "title": "RT @ferrer: E o CRASHERS está de volta!!! Muito obrigado @FalleNCS @ale_apoka @cogucs @mch_AGG @guer",
+                  "id": "1941935351234220424",
+                  "published": "2025-07-06T19:00:41.000Z"
+                },
+                "sponsors_found": [
+                  {
+                    "keyword": "crash",
+                    "category": "brazilian_games",
+                    "context": "rt @ferrer: e o crashers está de volta!!! muito obr"
+                  },
+                  {
+                    "keyword": "apoio",
+                    "category": "sponsorship_indicators",
+                    "context": "@cogucs @mch_agg @guerri pelo apoio! vamoooooo crashers!!! ht…"
+                  }
+                ]
+              }
+            ],
+            "categories_detected": [
+              "brazilian_games",
+              "sponsorship_indicators"
+            ],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 37,
+            "risk_factors": [
+              "Patrocínios de apostas detectados",
+              "Jogos populares no Brasil (Tigrinho, etc.)"
+            ],
+            "has_disclosure": true,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:29:52.574Z",
+            "platform": "twitter"
+          }
+        }
+      }
+    },
+    {
+      "name": "Erick Santos",
+      "nickname": "aspas",
+      "game": "Valorant",
+      "team": "Leviatán",
+      "division": 1,
+      "youtube_username": "aspaszin",
+      "twitch_username": "aspaszin",
+      "twitter_username": "aspaszin",
+      "playing_country": "CL",
+      "social_media": {
+        "youtube": {
+          "id": "UC54ubmq5wHM3fK0ERA856Zg",
+          "title": "ASPAS",
+          "subscribers": 380000,
+          "views": 40073626,
+          "videos": 365,
+          "description": "Campeão mundial de VALORANT | Professional Player for MIBR\n\nBusiness inquiries: aspas@prodigy-agency.gg\n"
+        },
+        "twitch": {
+          "id": "269503217",
+          "login": "aspaszin",
+          "display_name": "aspaszin",
+          "followers": 1010684,
+          "views": 0,
+          "description": "Campeão Mundial de VALORANT e Bicampeão do VCT AMERICAS.  - aspas@prodigy-agency.gg",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/56adcee0-86f1-4ade-bcd9-8d9bde1c6670-profile_image-300x300.png"
+        },
+        "twitter": {
+          "id": "1202495657707266051",
+          "username": "aspaszin",
+          "name": "aspas final boss🌪️",
+          "followers": 447875,
+          "following": 372,
+          "tweets": 2104,
+          "likes": 27345,
+          "verified": false,
+          "description": "Campeão Mundial de VALORANT | Player at @MIBR | Contato: aspas@prodigy-agency.gg | Ambassador @ATKgear ⌨️ | Naxy 💍♡",
+          "location": "",
+          "created_at": "2019-12-05T07:51:29.000Z"
+        }
+      },
+      "sponsorships": [],
+      "risk_score": 33,
+      "risk_factors": [
+        "Códigos promocionais identificados"
+      ],
+      "last_update": "2025-07-16T16:29:57.910Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UC54ubmq5wHM3fK0ERA856Zg",
+            "title": "ASPAS",
+            "subscribers": 380000,
+            "views": 40073626,
+            "videos": 365,
+            "description": "Campeão mundial de VALORANT | Professional Player for MIBR\n\nBusiness inquiries: aspas@prodigy-agency.gg\n"
+          },
+          "recent_videos": [
+            {
+              "title": "FRIO E CALCULISTA! ASPAS AMASSOU DE CLOVE NESSA PARTIDA",
+              "published": "2025-07-08T19:00:45Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "mXMQKN5N7Yg"
+            },
+            {
+              "title": "ASPAS E TARIK EM AÇÃO NAS RANKEADAS!",
+              "published": "2025-07-01T19:00:17Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "M1aDGyWvLWw"
+            },
+            {
+              "title": "ASPAS CARREGOU O CORTEZ NESSA PARTIDA! 37K 🌪️",
+              "published": "2025-06-24T19:00:19Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "E7J7DFJ-VjQ"
+            },
+            {
+              "title": "ASPAS E O MIBR DESTRUINDO O RANKED DIRETO DE TORONTO!!!",
+              "published": "2025-06-06T19:00:25Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "UxbaoQ7GT7o"
+            },
+            {
+              "title": "ASPAS CARREGOU O TENZ NESSA RANKED! 🌪️",
+              "published": "2025-06-03T19:00:13Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "HbTYHvhHFIs"
+            },
+            {
+              "title": "QUANDO O ASPAS MISSCLICK E INSTALOCKA A KILLJOY 😂 ft TenZ",
+              "published": "2025-05-30T19:00:00Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "a9VvvZclOps"
+            },
+            {
+              "title": "ASPAS &amp; TENZ MAKES THE BEST DUO TO DESTROY RANKED !!!",
+              "published": "2025-05-27T19:00:04Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "2aamvSEprrI"
+            },
+            {
+              "title": "ASPAS TERMINA O JOGO COM A RODADA MAIS INSANA DE TODAS!!",
+              "published": "2025-05-22T19:00:34Z",
+              "description": "My own keyboard with ATK is available NOW! You can get yours here: ...",
+              "videoId": "Xii_1v68l4U"
+            },
+            {
+              "title": "ASPAS BRILHOU NO ROUND DECISIVO IN RADIANT !!!",
+              "published": "2025-05-13T19:00:11Z",
+              "description": "Redes Sociais: https://konect.gg/aspas Clica em mostrar mais pra ver a descrição ↓ Twitter: https://twitter.com/aspaszin ...",
+              "videoId": "EYh2U72NJQI"
+            },
+            {
+              "title": "ASPAS MOSTRA POR QUE É O REI DO WAYLAY !!!",
+              "published": "2025-04-30T13:53:15Z",
+              "description": "Redes Sociais: https://konect.gg/aspas Clica em mostrar mais pra ver a descrição ↓ Twitter: https://twitter.com/aspaszin ...",
+              "videoId": "5jujTZlZisI"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:29:57.910Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "269503217",
+            "login": "aspaszin",
+            "display_name": "aspaszin",
+            "followers": 1010684,
+            "views": 0,
+            "description": "Campeão Mundial de VALORANT e Bicampeão do VCT AMERICAS.  - aspas@prodigy-agency.gg",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/56adcee0-86f1-4ade-bcd9-8d9bde1c6670-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-15T23:17:04Z",
+              "view_count": 111987,
+              "description": "",
+              "id": "2513532280"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-15T01:19:05Z",
+              "view_count": 69489,
+              "description": "",
+              "id": "2512746154"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-13T22:08:31Z",
+              "view_count": 167153,
+              "description": "",
+              "id": "2511746092"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-13T00:18:35Z",
+              "view_count": 104256,
+              "description": "",
+              "id": "2510943382"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-12T17:44:31Z",
+              "view_count": 81455,
+              "description": "",
+              "id": "2510638798"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-10T16:52:19Z",
+              "view_count": 80030,
+              "description": "",
+              "id": "2508802520"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE | !atk",
+              "created_at": "2025-07-09T21:29:59Z",
+              "view_count": 250145,
+              "description": "",
+              "id": "2508144193"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE |  LIVE DIRETAMENTE DO CANADA |  !atk",
+              "created_at": "2025-06-04T21:52:04Z",
+              "view_count": 58996,
+              "description": "",
+              "id": "2477228395"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE |  MEU TECLADO SAIU!!!!!  ATK RS6 Ultra × ASPAS - Limited Edition  |  !atk",
+              "created_at": "2025-05-24T02:30:31Z",
+              "view_count": 85126,
+              "description": "",
+              "id": "2466790470"
+            },
+            {
+              "title": "BUY THE MIBR BUNDLE |  MEU TECLADO SAIU!!!!!  ATK RS6 Ultra × ASPAS - Limited Edition  |  !atk",
+              "created_at": "2025-05-23T00:34:41Z",
+              "view_count": 42871,
+              "description": "",
+              "id": "2465839513"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE | !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE |  LIVE DIRETAMENTE DO CANADA |  !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE |  MEU TECLADO SAIU!!!!!  ATK RS6 Ultra × ASPAS - Limited Edition  |  !atk",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!atk",
+                "video_title": "BUY THE MIBR BUNDLE |  MEU TECLADO SAIU!!!!!  ATK RS6 Ultra × ASPAS - Limited Edition  |  !atk",
+                "type": "promotional_code"
+              }
+            ],
+            "risk_level": "high",
+            "risk_score": 100,
+            "risk_factors": [
+              "Códigos promocionais identificados"
+            ],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:29:57.505Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": {
+          "platform": "twitter",
+          "user_data": {
+            "id": "1202495657707266051",
+            "username": "aspaszin",
+            "name": "aspas final boss🌪️",
+            "followers": 447875,
+            "following": 372,
+            "tweets": 2104,
+            "likes": 27345,
+            "verified": false,
+            "description": "Campeão Mundial de VALORANT | Player at @MIBR | Contato: aspas@prodigy-agency.gg | Ambassador @ATKgear ⌨️ | Naxy 💍♡",
+            "location": "",
+            "created_at": "2019-12-05T07:51:29.000Z"
+          },
+          "recent_tweets": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:29:57.311Z",
+            "platform": "twitter"
+          }
+        }
+      }
+    },
+    {
+      "name": "Gustavo Rossi",
+      "nickname": "Sacy",
+      "game": "Valorant",
+      "team": "Sentinels",
+      "division": 1,
+      "youtube_username": "sacy",
+      "twitch_username": "sacy",
+      "twitter_username": "gustavosacy",
+      "playing_country": "US",
+      "social_media": {
+        "youtube": {
+          "id": "UC9Qx5N_X7p2nTwPfoKXPQeA",
+          "title": "Sacy",
+          "subscribers": 196000,
+          "views": 24973907,
+          "videos": 650,
+          "description": ""
+        },
+        "twitch": {
+          "id": "25116812",
+          "login": "sacy",
+          "display_name": "sacy",
+          "followers": 805161,
+          "views": 0,
+          "description": "NÃO SEI O QUE ESCREVER AQUI DEPOIS EU FAÇO",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5df0c5d3-9589-430f-82b7-72f51a25df4f-profile_image-300x300.png"
+        },
+        "twitter": {
+          "id": "2777390480",
+          "username": "gustavosacy",
+          "name": "Sacy",
+          "followers": 363416,
+          "following": 662,
+          "tweets": 16204,
+          "likes": 7614,
+          "verified": false,
+          "description": "Gustavo Rossi, 27 - São Paulo, SP | SPONSORED BY @mibr @nopingtunnel | ✉ sacy@framesag.com | https://t.co/gZjvjbeHDB",
+          "location": "Jundiaí, Brasil",
+          "created_at": "2014-08-29T00:07:33.000Z"
+        }
+      },
+      "sponsorships": [],
+      "risk_score": 33,
+      "risk_factors": [
+        "Códigos promocionais identificados"
+      ],
+      "last_update": "2025-07-16T16:30:01.903Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UC9Qx5N_X7p2nTwPfoKXPQeA",
+            "title": "Sacy",
+            "subscribers": 196000,
+            "views": 24973907,
+            "videos": 650,
+            "description": ""
+          },
+          "recent_videos": [
+            {
+              "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+              "published": "2025-07-16T15:32:10Z",
+              "description": "mibr Sacy deixem o like e se inscrevam no canal tbm #valorant.",
+              "videoId": "NfMQWxpV90c"
+            },
+            {
+              "title": "A reyna é meta ou não para vocês?  #valorant #sacy #valorantclips",
+              "published": "2025-07-16T14:30:22Z",
+              "description": "A reyna é meta ou não para vocês? #valorant #sacy #valorantclips.",
+              "videoId": "VP-5MgpD7Wo"
+            },
+            {
+              "title": "O VALORANT NÃO É PARA AMADORES..... | MELHORES MOMENTOS #1",
+              "published": "2025-07-15T22:01:30Z",
+              "description": "O VALORANT NÃO É PARA AMADORES..... | MELHORES MOMENTOS #1 Agora você não precisa mais se preocupar com ping ...",
+              "videoId": "RBOVJRgJ0Hk"
+            },
+            {
+              "title": "É MAIN É  #valorant #sacy #valorantclips",
+              "published": "2025-07-15T00:31:33Z",
+              "description": "É MAIN É #valorant #sacy #valorantclips.",
+              "videoId": "YLGgMUMyG3M"
+            },
+            {
+              "title": "COISAS QUE SÓ ACONTECEM NO TSI BY BONOXS... 👀 | Momentos do #tsibybonoxs",
+              "published": "2025-07-14T15:09:46Z",
+              "description": "A OFFSEASON QUE TROUXE ESPERANÇA!! | RESUMÃO #tsibybonoxs Agora você não precisa mais se preocupar com ping ...",
+              "videoId": "Un68f7ildkU"
+            },
+            {
+              "title": "VALEU VALEU...  #valorant #sacy #valorantclips",
+              "published": "2025-07-13T20:41:44Z",
+              "description": "VALEU VALEU... #valorant #sacy #valorantclips.",
+              "videoId": "43GNQiSW9Y4"
+            },
+            {
+              "title": "A GRANDE FINAL MILIONÁRIA!!! Sacy Reage: FNATIC x HERETICS | EWC 2025",
+              "published": "2025-07-13T16:37:52Z",
+              "description": "FINAL MILIONARIA DA COPA DO MUNDO DE ESPORTS!! Sacy Reage: FNATIC x HERETICS | EWC 2025 Agora você não ...",
+              "videoId": "yfEhIy807xs"
+            },
+            {
+              "title": "O CAMP VALENDO MEIO MILHÃO! Sacy Reage: SEN x PRX | EWC 2025",
+              "published": "2025-07-11T14:36:07Z",
+              "description": "O CAMP VALENDO MEIO MILHÃO!! Sacy Reage: SEN x PRX | EWC 2025 Agora você não precisa mais se preocupar com ping ...",
+              "videoId": "bW0h8sCjJWc"
+            },
+            {
+              "title": "APOSENTADO MAS COM MUITA!!  #valorant #sacy #valorantclips",
+              "published": "2025-07-11T04:03:25Z",
+              "description": "APOSENTADO MAS COM MUITA!! #valorant #sacy #valorantclips.",
+              "videoId": "tHgSvuJo3P0"
+            },
+            {
+              "title": "GOSTARAM DO CAMP??  #sacy #valorant #valorantclips",
+              "published": "2025-07-07T22:53:54Z",
+              "description": "GOSTARAM DO CAMP?? #sacy #valorant #valorantclips.",
+              "videoId": "89WzHQk_Gwc"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:01.903Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "25116812",
+            "login": "sacy",
+            "display_name": "sacy",
+            "followers": 805161,
+            "views": 0,
+            "description": "NÃO SEI O QUE ESCREVER AQUI DEPOIS EU FAÇO",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5df0c5d3-9589-430f-82b7-72f51a25df4f-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+              "created_at": "2025-07-16T15:32:08Z",
+              "view_count": 5,
+              "description": "",
+              "id": "2514068335"
+            },
+            {
+              "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+              "created_at": "2025-07-15T15:14:19Z",
+              "view_count": 66498,
+              "description": "",
+              "id": "2513154109"
+            },
+            {
+              "title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+              "created_at": "2025-07-14T19:13:04Z",
+              "view_count": 90462,
+              "description": "",
+              "id": "2512454304"
+            },
+            {
+              "title": "FNC vs TH (Grande Final / MD5) - EWC 2025",
+              "created_at": "2025-07-13T10:24:07Z",
+              "view_count": 49029,
+              "description": "",
+              "id": "2511273569"
+            },
+            {
+              "title": "MIBR Sacy / PRX vs FNC - EWC 2025",
+              "created_at": "2025-07-12T09:20:48Z",
+              "view_count": 88062,
+              "description": "",
+              "id": "2510356185"
+            },
+            {
+              "title": "MIBR Sacy / SEN vs PRX - EWC 2025",
+              "created_at": "2025-07-11T08:55:12Z",
+              "view_count": 68534,
+              "description": "",
+              "id": "2509445008"
+            },
+            {
+              "title": "HERETICS vs RRQ #EWC25 / bom dia.",
+              "created_at": "2025-07-10T12:04:48Z",
+              "view_count": 54481,
+              "description": "",
+              "id": "2508637827"
+            },
+            {
+              "title": "MIBR Sacy / FERIADO TRYHARD NAS RANKEDS RADIANTE. - !mibr !noping !pix",
+              "created_at": "2025-07-09T18:22:34Z",
+              "view_count": 57499,
+              "description": "",
+              "id": "2507997186"
+            },
+            {
+              "title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+              "created_at": "2025-07-08T16:38:09Z",
+              "view_count": 52513,
+              "description": "",
+              "id": "2507032588"
+            },
+            {
+              "title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+              "created_at": "2025-07-07T17:14:59Z",
+              "view_count": 75525,
+              "description": "",
+              "id": "2506178893"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / EMMA EMMA EMMA - !emma !noping !mibr !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / FERIADO TRYHARD NAS RANKEDS RADIANTE. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / FERIADO TRYHARD NAS RANKEDS RADIANTE. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / FERIADO TRYHARD NAS RANKEDS RADIANTE. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / VOLTAMOS A PROGRAMAÇÃO NORMAL. - !mibr !noping !pix",
+                "type": "promotional_code"
+              }
+            ],
+            "risk_level": "high",
+            "risk_score": 100,
+            "risk_factors": [
+              "Códigos promocionais identificados"
+            ],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:01.591Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": {
+          "platform": "twitter",
+          "user_data": {
+            "id": "2777390480",
+            "username": "gustavosacy",
+            "name": "Sacy",
+            "followers": 363416,
+            "following": 662,
+            "tweets": 16204,
+            "likes": 7614,
+            "verified": false,
+            "description": "Gustavo Rossi, 27 - São Paulo, SP | SPONSORED BY @mibr @nopingtunnel | ✉ sacy@framesag.com | https://t.co/gZjvjbeHDB",
+            "location": "Jundiaí, Brasil",
+            "created_at": "2014-08-29T00:07:33.000Z"
+          },
+          "recent_tweets": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:01.303Z",
+            "platform": "twitter"
+          }
+        }
+      }
+    },
+    {
+      "name": "Kaike Cerato",
+      "nickname": "KSCERATO",
+      "game": "Counter-Strike",
+      "team": "FURIA",
+      "division": 1,
+      "youtube_username": "kscerato",
+      "twitch_username": "kscerato",
+      "twitter_username": "KSCERATO",
+      "playing_country": "US",
+      "social_media": {
+        "youtube": {
+          "id": "UCm1UGiTwt9VVUDhn05wNNxA",
+          "title": "kscerato",
+          "subscribers": 51,
+          "views": 0,
+          "videos": 0,
+          "description": ""
+        },
+        "twitch": {
+          "id": "38568044",
+          "login": "kscerato",
+          "display_name": "kscerato",
+          "followers": 80596,
+          "views": 0,
+          "description": "",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/01247541-a2d8-435d-b764-12ce595f2f42-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-07-16T16:30:05.887Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UCm1UGiTwt9VVUDhn05wNNxA",
+            "title": "kscerato",
+            "subscribers": 51,
+            "views": 0,
+            "videos": 0,
+            "description": ""
+          },
+          "recent_videos": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:05.887Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "38568044",
+            "login": "kscerato",
+            "display_name": "kscerato",
+            "followers": 80596,
+            "views": 0,
+            "description": "",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/01247541-a2d8-435d-b764-12ce595f2f42-profile_image-300x300.png"
+          },
+          "recent_videos": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:05.566Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Felipe Gonçalves",
+      "nickname": "brTT",
+      "game": "League of Legends",
+      "team": "paiN Gaming",
+      "division": 1,
+      "youtube_username": "brttoficial",
+      "twitch_username": "brtt",
+      "twitter_username": "brttoficial",
+      "playing_country": "BR",
+      "social_media": {
+        "youtube": {
+          "id": "UCM1uYkHmmY8-VCEvKHBe-_Q",
+          "title": "brTToficial",
+          "subscribers": 13000,
+          "views": 251892,
+          "videos": 2,
+          "description": ""
+        },
+        "twitch": {
+          "id": "31497918",
+          "login": "brtt",
+          "display_name": "brtt",
+          "followers": 1000170,
+          "views": 0,
+          "description": "",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c70194ff-884e-4b35-9848-5fa3bcbd49e5-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-07-16T16:30:09.643Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UCM1uYkHmmY8-VCEvKHBe-_Q",
+            "title": "brTToficial",
+            "subscribers": 13000,
+            "views": 251892,
+            "videos": 2,
+            "description": ""
+          },
+          "recent_videos": [
+            {
+              "title": "brTT - Temporada de Caça | Making Of",
+              "published": "2022-04-30T23:31:26Z",
+              "description": "OUÇA #TEMPORADADECAÇA     EM TODAS AS PLATAFORMAS: https://sym.ffm.to/temporadadecaca Inscreva-se no canal e ...",
+              "videoId": "UhoytKhe660"
+            },
+            {
+              "title": "brTT - Temporada de Caça  (prod. Nolly)",
+              "published": "2022-04-22T22:00:14Z",
+              "description": "OUÇA #TEMPORADADECAÇA     EM TODAS AS PLATAFORMAS: https://sym.ffm.to/temporadadecaca Inscreva-se no canal e ...",
+              "videoId": "AZbHG3KN93M"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 2,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:09.643Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "31497918",
+            "login": "brtt",
+            "display_name": "brtt",
+            "followers": 1000170,
+            "views": 0,
+            "description": "",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c70194ff-884e-4b35-9848-5fa3bcbd49e5-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-16T13:26:59Z",
+              "view_count": 39,
+              "description": "",
+              "id": "2513995463"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-15T17:32:43Z",
+              "view_count": 30177,
+              "description": "",
+              "id": "2513253207"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-15T15:57:30Z",
+              "view_count": 9214,
+              "description": "",
+              "id": "2513179851"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-14T16:06:02Z",
+              "view_count": 44524,
+              "description": "",
+              "id": "2512312322"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-13T19:11:17Z",
+              "view_count": 48317,
+              "description": "",
+              "id": "2511608994"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-10T15:53:19Z",
+              "view_count": 56787,
+              "description": "",
+              "id": "2508762562"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-09T13:35:57Z",
+              "view_count": 43945,
+              "description": "",
+              "id": "2507803270"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-08T16:07:33Z",
+              "view_count": 45621,
+              "description": "",
+              "id": "2507011957"
+            },
+            {
+              "title": "GAMER.  Sekiro 15:00",
+              "created_at": "2025-07-02T15:47:08Z",
+              "view_count": 49429,
+              "description": "",
+              "id": "2501791880"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-01T15:57:14Z",
+              "view_count": 27065,
+              "description": "",
+              "id": "2500923735"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:09.567Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Andrei Piovezan",
+      "nickname": "arT",
+      "game": "Counter-Strike",
+      "team": "FURIA",
+      "division": 1,
+      "youtube_username": "artcs",
+      "twitch_username": "art",
+      "twitter_username": "arTcs",
+      "playing_country": "US",
+      "social_media": {
+        "youtube": {
+          "id": "UCihi_tKTk4qVF_b_1Al_A4g",
+          "title": "Artcs Gráfica",
+          "subscribers": 3,
+          "views": 17,
+          "videos": 1,
+          "description": "Somos uma Grafica especializada em Adesivos,  Plotagens de Geladeiras, freezers, eletrodomésticos em geral, Moveis, Carros, Portas, Paredes, Pisos, Banheiros, Cozinhas, faxadas de lojas, placas, letreiros, banners, windbanners, fazemos também toda a parte de impressão gráfica, como cartões de visita, blocos, receituários, panfletos, convites de casamento, enfim, uma infinidade de serviços de altíssima qualidade. Faça-nos uma cotação e teremos o maior prazer em te atender."
+        },
+        "twitch": null,
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-07-16T16:30:13.526Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UCihi_tKTk4qVF_b_1Al_A4g",
+            "title": "Artcs Gráfica",
+            "subscribers": 3,
+            "views": 17,
+            "videos": 1,
+            "description": "Somos uma Grafica especializada em Adesivos,  Plotagens de Geladeiras, freezers, eletrodomésticos em geral, Moveis, Carros, Portas, Paredes, Pisos, Banheiros, Cozinhas, faxadas de lojas, placas, letreiros, banners, windbanners, fazemos também toda a parte de impressão gráfica, como cartões de visita, blocos, receituários, panfletos, convites de casamento, enfim, uma infinidade de serviços de altíssima qualidade. Faça-nos uma cotação e teremos o maior prazer em te atender."
+          },
+          "recent_videos": [
+            {
+              "title": "COMO PLOTAR GELADEIRA E MÓVEIS",
+              "published": "2023-07-12T19:10:18Z",
+              "description": "Gráfica especializada em plotagem de eletrodomésticos, móveis em geral, carros, paredes... o que você sonhar, nós ...",
+              "videoId": "ifft9l9BYis"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 1,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:13.526Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": null,
+        "twitter": null
+      }
+    },
+    {
+      "name": "Matias Delipetro",
+      "nickname": "saadhak",
+      "game": "Valorant",
+      "team": "LOUD",
+      "division": 1,
+      "youtube_username": "saadhak",
+      "twitch_username": "saadhak",
+      "twitter_username": "saadhak",
+      "playing_country": "BR",
+      "social_media": {
+        "youtube": {
+          "id": "UCtXXSuHUWh1-PRC7AeDB7mg",
+          "title": "Saadhak",
+          "subscribers": 115000,
+          "views": 20411749,
+          "videos": 1269,
+          "description": "VALORANT World Champion | Captain at KARMINE CORP\n"
+        },
+        "twitch": {
+          "id": "133926538",
+          "login": "saadhak",
+          "display_name": "Saadhak",
+          "followers": 426418,
+          "views": 0,
+          "description": "VALORANT World Champion | Captain and IGL of Karmine Corp ",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/d649d28a-98ea-407e-a973-96f39a03bbb5-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-07-16T16:30:17.562Z",
+      "raw_data": {
+        "youtube": {
+          "platform": "youtube",
+          "channel_data": {
+            "id": "UCtXXSuHUWh1-PRC7AeDB7mg",
+            "title": "Saadhak",
+            "subscribers": 115000,
+            "views": 20411749,
+            "videos": 1269,
+            "description": "VALORANT World Champion | Captain at KARMINE CORP\n"
+          },
+          "recent_videos": [
+            {
+              "title": "É BRASIL PO***** 🇧🇷🤣🥳🥳 #saadhak #karminecorp #kcorp #ewc",
+              "published": "2025-07-15T22:23:01Z",
+              "description": "É BRASIL PO***** #saadhak #karminecorp #kcorp #ewc.",
+              "videoId": "qcPCnZXi0DM"
+            },
+            {
+              "title": "essa foi pra conta do AVEZ #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-11T11:16:14Z",
+              "description": "essa foi pra conta do AVEZ #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "uiwG4pvJaH4"
+            },
+            {
+              "title": "AVEZ??? CUIDADO com ISSO #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-11T10:40:28Z",
+              "description": "AVEZ??? CUIDADO com ISSO #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "ZNLMpEVUFz8"
+            },
+            {
+              "title": "pq SUYGETSU não ERRA TIRO??? #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-11T10:10:03Z",
+              "description": "pq SUYGETSU não ERRA TIRO??? #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "oa36IYjNPfQ"
+            },
+            {
+              "title": "Estamos na VANTAGEM  na primeira metade #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-11T09:47:51Z",
+              "description": "Estamos na VANTAGEM na primeira metade #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "We8GcF-wMnQ"
+            },
+            {
+              "title": "MARTEEN 4K de MARSHAL #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-10T11:42:45Z",
+              "description": "MARTEEN 4K de MARSHAL #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "DHI_6zMm4eE"
+            },
+            {
+              "title": "leitura tá perfeita 👍 #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-10T10:44:44Z",
+              "description": "leitura tá perfeita #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "K53gRaGcLMY"
+            },
+            {
+              "title": "5K SUYGETSU DE NOVO! NERF SUYGETSU #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-10T10:40:36Z",
+              "description": "5K SUYGETSU DE NOVO! NERF SUYGETSU #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "h1CVkrzDTow"
+            },
+            {
+              "title": "SAADHAK 3K de CLASSIC #saadhak #karminecorp #kcorp #valorant #ewc",
+              "published": "2025-07-10T10:37:31Z",
+              "description": "SAADHAK 3K de CLASSIC #saadhak #karminecorp #kcorp #valorant #ewc.",
+              "videoId": "jgJMI4jMUQI"
+            },
+            {
+              "title": "KC Elite é bem RATO! #saadhak #karminecorp #kcorp #valorant",
+              "published": "2025-07-08T15:03:20Z",
+              "description": "KC Elite é bem RATO! #saadhak #karminecorp #kcorp #valorant.",
+              "videoId": "6mOdaRkxPAs"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:17.561Z",
+            "platform": "youtube"
+          }
+        },
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "133926538",
+            "login": "saadhak",
+            "display_name": "Saadhak",
+            "followers": 426418,
+            "views": 0,
+            "description": "VALORANT World Champion | Captain and IGL of Karmine Corp ",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/d649d28a-98ea-407e-a973-96f39a03bbb5-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-19T19:54:06Z",
+              "view_count": 10305,
+              "description": "",
+              "id": "2490483700"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-16T19:55:46Z",
+              "view_count": 11711,
+              "description": "",
+              "id": "2487806795"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-15T19:56:28Z",
+              "view_count": 23436,
+              "description": "",
+              "id": "2486984333"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-13T20:16:08Z",
+              "view_count": 536,
+              "description": "",
+              "id": "2485165731"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-13T20:00:09Z",
+              "view_count": 20412,
+              "description": "",
+              "id": "2485151541"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-05T18:52:21Z",
+              "view_count": 4906,
+              "description": "",
+              "id": "2477969254"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-04T13:32:41Z",
+              "view_count": 7631,
+              "description": "",
+              "id": "2476866221"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 7,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-07-16T16:30:17.254Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    }
+  ],
+  "dashboard": {
+    "total_athletes": 7,
+    "active_athletes": 7,
+    "total_sponsorships": 2,
+    "high_risk_count": 0,
+    "avg_risk_score": 11,
+    "platform_coverage": {
+      "youtube": 7,
+      "twitch": 6,
+      "twitter": 3
+    },
+    "platform_percentage": {
+      "youtube": 100,
+      "twitch": 86,
+      "twitter": 43
+    },
+    "games_distribution": [
+      {
+        "game": "Counter-Strike",
+        "athletes": 3,
+        "sponsorships": 2
+      },
+      {
+        "game": "Valorant",
+        "athletes": 3,
+        "sponsorships": 0
+      },
+      {
+        "game": "League of Legends",
+        "athletes": 1,
+        "sponsorships": 0
+      }
+    ],
+    "division_analysis": {
+      "division_1": {
+        "total": 7,
+        "high_risk": 0,
+        "avg_risk": 11
+      },
+      "division_2": {
+        "total": 0,
+        "high_risk": 0,
+        "avg_risk": 0
+      }
+    },
+    "last_collection": "2025-07-16T16:30:20.572Z",
+    "collection_method": "multi_platform_api",
+    "data_sources": [
+      "youtube_api",
+      "twitch_api",
+      "twitter_api"
+    ]
+  }
+}

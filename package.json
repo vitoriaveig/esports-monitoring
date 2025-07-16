@@ -1,0 +1,18 @@
+{
+  "name": "esports-monitoring",
+  "version": "1.0.0", 
+  "description": "Monitoramento de e-Sports brasileiros - Tese de Doutorado",
+  "main": "backend/server-real.js",
+  "scripts": {
+    "start": "node backend/server-real.js",
+    "start-sim": "node backend/server.js",
+    "dev": "nodemon backend/server-real.js", 
+    "test-apis": "node test-real-data.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0"
+  }
+}

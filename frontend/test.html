@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Dashboard</title>
+</head>
+<body>
+    <h1>🎯 SERVIDOR FUNCIONANDO!</h1>
+    <p>API OK! ✅</p>
+    <p><a href="/">Ir para Dashboard</a></p>
+    
+    <script>
+        console.log('HTML carregando...');
+        fetch('/api/athletes')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Dados da API:', data);
+                document.body.innerHTML += '<p>✅ API conectada: ' + data[0].name + '</p>';
+            })
+            .catch(error => {
+                console.error('Erro na API:', error);
+            });
+    </script>
+</body>
+</html>
