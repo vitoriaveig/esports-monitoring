@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard E-Sports & Apostas - Tese de Doutorado</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9fafb;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-status" style="padding: 20px; text-align: center; background: #e3f2fd;">
+        <h2>🔄 Carregando Dashboard E-Sports...</h2>
+        <p>Conectando com APIs e carregando dados...</p>
+    </div>
+
+    <div id="root">
+        <div class="loading">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script type="text/babel">
+        console.log('🚀 Iniciando Dashboard E-Sports...');
+        
+        // Remover indicador de loading
+        document.getElementById('loading-status').style.display = 'none';
+        
+        const { useState, useEffect } = React;
+
+        // Cliente da API
+        class EsportsApiClient {
+            constructor(baseURL = '/api') {
+                this.baseURL = baseURL;
+            }
+
+            async request(endpoint, options = {}) {
+                try {
+                    console.log(`📡 Fazendo request para: ${this.baseURL}${endpoint}`);
+                    const response = await fetch(`${this.baseURL}${endpoint}`, {
+                        headers: {
+                            'Content-Type': 'application/json',
+                            ...options.headers
+                        },
+                        ...options
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API Error: ${response.status} ${response.statusText}`);
+                    }
+
+                    const data = await response.json();
+                    console.log(`✅ Dados recebidos:`, data);
+                    return data;
+                } catch (error) {
+                    console.error('❌ Erro na API:', error);
+                    throw error;
+                }
+            }
+
+            async getDashboardData() {
+                return this.request('/dashboard/data');
+            }
+
+            async getAthletes() {
+                return this.request('/athletes');
+            }
+        }
+
+        const EsportsMonitoringDashboard = () => {
+            const [activeTab, setActiveTab] = useState('overview');
+            const [isLoading, setIsLoading] = useState(true);
+            const [data, setData] = useState(null);
+            const [error, setError] = useState(null);
+            
+            const apiClient = new EsportsApiClient();
+
+            // Carregar dados da API
+            const loadData = async () => {
+                setIsLoading(true);
+                setError(null);
+                
+                try {
+                    console.log('🔄 Carregando dados do dashboard...');
+                    
+                    const [dashboardData, athletes] = await Promise.all([
+                        apiClient.getDashboardData(),
+                        apiClient.getAthletes()
+                    ]);
+
+                    setData({
+                        dashboard: dashboardData,
+                        athletes: athletes
+                    });
+                    
+                    console.log('✅ Dados carregados com sucesso!');
+                } catch (err) {
+                    console.error('❌ Erro ao carregar dados:', err);
+                    setError(err.message);
+                } finally {
+                    setIsLoading(false);
+                }
+            };
+
+            // Carregar dados na inicialização
+            useEffect(() => {
+                console.log('🎯 Dashboard montado, carregando dados...');
+                loadData();
+            }, []);
+
+            // Estado de erro
+            if (error) {
+                return (
+                    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+                        <div className="bg-white rounded-lg shadow-sm p-8 max-w-md w-full text-center">
+                            <div className="text-red-500 text-4xl mb-4">⚠️</div>
+                            <h2 className="text-xl font-semibold text-gray-900 mb-2">Erro de Conexão</h2>
+                            <p className="text-gray-600 mb-4">{error}</p>
+                            <button 
+                                onClick={loadData}
+                                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+                            >
+                                Tentar Novamente
+                            </button>
+                        </div>
+                    </div>
+                );
+            }
+
+            // Estado de loading
+            if (isLoading) {
+                return (
+                    <div className="loading">
+                        <div className="spinner"></div>
+                    </div>
+                );
+            }
+
+            return (
+                <div className="min-h-screen bg-gray-50 p-4 md:p-6">
+                    <div className="max-w-7xl mx-auto">
+                        {/* Header */}
+                        <div className="bg-white rounded-lg shadow-sm p-4 md:p-6 mb-6">
+                            <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+                                <div className="mb-4 md:mb-0">
+                                    <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
+                                        Monitoramento E-Sports & Apostas 🎮
+                                    </h1>
+                                    <p className="text-gray-600 mt-2 text-sm md:text-base">
+                                        Sistema com dados reais - Tese de Doutorado
+                                    </p>
+                                </div>
+                                <div className="flex space-x-3">
+                                    <button 
+                                        onClick={loadData}
+                                        className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm"
+                                    >
+                                        🔄 Atualizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Status */}
+                        <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <h3 className="text-lg font-semibold">Status do Sistema</h3>
+                                    <p className="text-gray-600 text-sm">APIs conectadas e funcionando</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <span className="h-3 w-3 bg-green-400 rounded-full animate-pulse"></span>
+                                    <span className="text-sm text-green-600">Operacional</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Métricas */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="flex items-center">
+                                    <div className="text-blue-600 text-2xl mr-3">👥</div>
+                                    <div>
+                                        <p className="text-sm font-medium text-gray-500">Atletas</p>
+                                        <p className="text-2xl font-semibold text-gray-900">
+                                            {data?.dashboard?.total_athletes || 0}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="flex items-center">
+                                    <div className="text-green-600 text-2xl mr-3">💰</div>
+                                    <div>
+                                        <p className="text-sm font-medium text-gray-500">Patrocínios</p>
+                                        <p className="text-2xl font-semibold text-gray-900">
+                                            {data?.dashboard?.total_sponsorships || 0}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="flex items-center">
+                                    <div className="text-red-600 text-2xl mr-3">⚠️</div>
+                                    <div>
+                                        <p className="text-sm font-medium text-gray-500">Alto Risco</p>
+                                        <p className="text-2xl font-semibold text-gray-900">
+                                            {data?.dashboard?.high_risk_count || 0}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="flex items-center">
+                                    <div className="text-purple-600 text-2xl mr-3">📊</div>
+                                    <div>
+                                        <p className="text-sm font-medium text-gray-500">Ativos</p>
+                                        <p className="text-2xl font-semibold text-gray-900">
+                                            {data?.dashboard?.active_athletes || 0}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Tabs */}
+                        <div className="bg-white rounded-lg shadow-sm mb-6">
+                            <div className="border-b border-gray-200">
+                                <nav className="flex px-6">
+                                    {[
+                                        { id: 'overview', name: 'Visão Geral', icon: '📊' },
+                                        { id: 'athletes', name: 'Atletas', icon: '👥' },
+                                        { id: 'insights', name: 'Insights', icon: '🎯' }
+                                    ].map((tab) => (
+                                        <button
+                                            key={tab.id}
+                                            onClick={() => setActiveTab(tab.id)}
+                                            className={`flex items-center py-4 px-4 border-b-2 font-medium text-sm ${
+                                                activeTab === tab.id
+                                                    ? 'border-blue-500 text-blue-600'
+                                                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                                            }`}
+                                        >
+                                            <span className="mr-2">{tab.icon}</span>
+                                            {tab.name}
+                                        </button>
+                                    ))}
+                                </nav>
+                            </div>
+                        </div>
+
+                        {/* Conteúdo das Tabs */}
+                        <div className="space-y-6">
+                            {activeTab === 'overview' && (
+                                <div className="bg-white p-6 rounded-lg shadow-sm">
+                                    <h3 className="text-lg font-semibold mb-4">📈 Visão Geral do Sistema</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 className="font-medium text-gray-900 mb-3">Estatísticas Principais</h4>
+                                            <ul className="space-y-2 text-sm text-gray-600">
+                                                <li>• Sistema coletando dados em tempo real</li>
+                                                <li>• APIs das redes sociais integradas</li>
+                                                <li>• Análise automatizada de patrocínios</li>
+                                                <li>• Monitoramento de compliance legal</li>
+                                                <li>• Alertas de risco automatizados</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-medium text-gray-900 mb-3">Próximas Funcionalidades</h4>
+                                            <ul className="space-y-2 text-sm text-gray-600">
+                                                <li>• Integração com APIs reais</li>
+                                                <li>• Dashboard de riscos avançado</li>
+                                                <li>• Relatórios acadêmicos</li>
+                                                <li>• Análise demográfica</li>
+                                                <li>• Sistema de alertas em tempo real</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'athletes' && (
+                                <div className="bg-white rounded-lg shadow-sm">
+                                    <div className="p-6 border-b border-gray-200">
+                                        <h3 className="text-lg font-semibold">👥 Atletas Monitorados</h3>
+                                        <p className="text-gray-600 mt-1 text-sm">
+                                            {data?.athletes?.length || 0} atletas brasileiros
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="overflow-x-auto">
+                                        <table className="w-full">
+                                            <thead className="bg-gray-50">
+                                                <tr>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Atleta</th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Game</th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Time</th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Seguidores</th>
+                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Risco</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="bg-white divide-y divide-gray-200">
+                                                {data?.athletes?.map((athlete, index) => (
+                                                    <tr key={index} className="hover:bg-gray-50">
+                                                        <td className="px-6 py-4 whitespace-nowrap">
+                                                            <div>
+                                                                <div className="text-sm font-medium text-gray-900">
+                                                                    {athlete.name}
+                                                                </div>
+                                                                <div className="text-sm text-gray-500">
+                                                                    {athlete.nickname}
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                                            {athlete.game}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                                            {athlete.team}
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                                            🐦 {(athlete.social_media?.twitter?.followers / 1000).toFixed(0)}k
+                                                        </td>
+                                                        <td className="px-6 py-4 whitespace-nowrap">
+                                                            <span className={`px-2 py-1 text-xs font-medium rounded-full ${
+                                                                athlete.risk_score >= 70 ? 'text-red-600 bg-red-100' :
+                                                                athlete.risk_score >= 40 ? 'text-yellow-600 bg-yellow-100' :
+                                                                'text-green-600 bg-green-100'
+                                                            }`}>
+                                                                {athlete.risk_score}/100
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            )}
+
+                            {activeTab === 'insights' && (
+                                <div className="bg-white p-6 rounded-lg shadow-sm">
+                                    <h3 className="text-lg font-semibold mb-4">🎯 Insights Acadêmicos</h3>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 className="font-medium text-gray-900 mb-3">Metodologia</h4>
+                                            <ul className="space-y-2 text-sm text-gray-600">
+                                                <li>• Coleta automatizada via APIs</li>
+                                                <li>• Análise de sentimento em português</li>
+                                                <li>• Detecção de patrocínios gambling</li>
+                                                <li>• Compliance com Lei 14.790/23</li>
+                                                <li>• Monitoramento global de atletas BR</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-medium text-gray-900 mb-3">Descobertas Preliminares</h4>
+                                            <ul className="space-y-2 text-sm text-gray-600">
+                                                <li>• Alto engajamento de público jovem</li>
+                                                <li>• Falta transparência em patrocínios</li>
+                                                <li>• Crescimento skin gambling</li>
+                                                <li>• Necessidade regulamentação específica</li>
+                                                <li>• Atletas BR globalmente distribuídos</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Footer */}
+                        <div className="mt-8 text-center text-xs text-gray-500">
+                            <p>🎓 Dashboard de Monitoramento E-Sports & Apostas - Tese de Doutorado</p>
+                            <p className="mt-1">Dados em tempo real via APIs • Sistema operacional ✅</p>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        // Render do app
+        console.log('🎨 Renderizando Dashboard...');
+        ReactDOM.render(<EsportsMonitoringDashboard />, document.getElementById('root'));
+        console.log('✅ Dashboard renderizado com sucesso!');
+    </script>
+</body>
+</html>

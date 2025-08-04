@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard E-Sports & Apostas - Tese de Doutorado</title>
+    <title>Dashboard E-Sports & Apostas - Análise de Alertas</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
         .loading {
             display: flex;
@@ -15,6 +18,7 @@
             align-items: center;
             min-height: 100vh;
             background-color: #f9fafb;
+            flex-direction: column;
         }
         .spinner {
             width: 40px;
@@ -28,37 +32,64 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .alert-card {
+            border-left: 4px solid #dc2626;
+            transition: all 0.2s;
+        }
+        .alert-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .academic-highlight {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .problem-alert {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2d3436;
+        }
+        .success-alert {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <div id="loading-status" style="padding: 20px; text-align: center; background: #e3f2fd;">
-        <h2>🔄 Carregando Dashboard E-Sports...</h2>
-        <p>Conectando com APIs e carregando dados...</p>
-    </div>
-
     <div id="root">
         <div class="loading">
             <div class="spinner"></div>
+            <p class="mt-4 text-gray-600">Carregando Dashboard E-Sports...</p>
+            <p class="text-sm text-gray-500">Conectando com o backend...</p>
         </div>
     </div>
 
     <script type="text/babel">
-        console.log('🚀 Iniciando Dashboard E-Sports...');
-        
-        // Remover indicador de loading
-        document.getElementById('loading-status').style.display = 'none';
-        
-        const { useState, useEffect } = React;
+        const { useState, useEffect, useRef } = React;
 
-        // Cliente da API
+        // CLIENTE API COMPLETAMENTE INTEGRADO COM O BACKEND
         class EsportsApiClient {
             constructor(baseURL = '/api') {
                 this.baseURL = baseURL;
+                this.requestCount = 0;
             }
 
             async request(endpoint, options = {}) {
+                this.requestCount++;
+                const requestId = this.requestCount;
+                
                 try {
-                    console.log(`📡 Fazendo request para: ${this.baseURL}${endpoint}`);
+                    console.log(`📡 [${requestId}] Fazendo request para: ${this.baseURL}${endpoint}`);
+                    
                     const response = await fetch(`${this.baseURL}${endpoint}`, {
                         headers: {
                             'Content-Type': 'application/json',
@@ -68,14 +99,16 @@
                     });
 
                     if (!response.ok) {
-                        throw new Error(`API Error: ${response.status} ${response.statusText}`);
+                        throw new Error(`API Error ${response.status}: ${response.statusText}`);
                     }
 
                     const data = await response.json();
-                    console.log(`✅ Dados recebidos:`, data);
+                    console.log(`✅ [${requestId}] Dados recebidos de ${endpoint}`);
+                    console.log(`📊 [${requestId}] Estrutura:`, Object.keys(data));
+                    
                     return data;
                 } catch (error) {
-                    console.error('❌ Erro na API:', error);
+                    console.error(`❌ [${requestId}] Erro na API ${endpoint}:`, error);
                     throw error;
                 }
             }
@@ -84,76 +117,366 @@
                 return this.request('/dashboard/data');
             }
 
-            async getAthletes() {
-                return this.request('/athletes');
+            async getAlertAnalytics() {
+                return this.request('/alerts/analytics');
+            }
+
+            async getDetailedAlerts(filters = {}) {
+                const params = new URLSearchParams(filters).toString();
+                return this.request(`/alerts/detailed${params ? '?' + params : ''}`);
+            }
+
+            async getAcademicReport() {
+                return this.request('/academic/report');
+            }
+
+            async forceCollection() {
+                return this.request('/collect/full-analysis', { method: 'POST' });
             }
         }
 
+        // COMPONENTE DE GRÁFICO COM VERIFICAÇÕES ROBUSTAS
+        const ChartComponent = ({ type, data, options, title, className = '' }) => {
+            const canvasRef = useRef(null);
+            const chartRef = useRef(null);
+
+            useEffect(() => {
+                // Verificar se Chart.js está disponível
+                if (typeof Chart === 'undefined') {
+                    console.error('❌ Chart.js não carregado!');
+                    return;
+                }
+
+                // Verificar se há dados para mostrar
+                if (!data || !data.datasets || data.datasets.length === 0) {
+                    console.warn('⚠️ Sem dados para o gráfico:', title);
+                    return;
+                }
+
+                // Verificar se o canvas existe
+                if (!canvasRef.current) {
+                    console.warn('⚠️ Canvas não encontrado para:', title);
+                    return;
+                }
+
+                try {
+                    const ctx = canvasRef.current.getContext('2d');
+                    
+                    // Destruir gráfico anterior
+                    if (chartRef.current) {
+                        chartRef.current.destroy();
+                    }
+
+                    // Criar novo gráfico
+                    chartRef.current = new Chart(ctx, {
+                        type: type,
+                        data: data,
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                title: {
+                                    display: !!title,
+                                    text: title,
+                                    font: { size: 16, weight: 'bold' },
+                                    color: '#1f2937'
+                                },
+                                legend: {
+                                    position: 'top',
+                                    labels: {
+                                        usePointStyle: true,
+                                        padding: 20
+                                    }
+                                }
+                            },
+                            scales: type === 'bar' || type === 'line' ? {
+                                y: {
+                                    beginAtZero: true,
+                                    grid: { color: '#f3f4f6' }
+                                },
+                                x: {
+                                    grid: { color: '#f3f4f6' }
+                                }
+                            } : {},
+                            ...options
+                        }
+                    });
+
+                    console.log('✅ Gráfico criado:', title);
+
+                } catch (error) {
+                    console.error('❌ Erro criando gráfico:', title, error);
+                }
+
+                return () => {
+                    if (chartRef.current) {
+                        chartRef.current.destroy();
+                    }
+                };
+            }, [type, data, options, title]);
+
+            // Renderizar canvas ou mensagem de erro
+            return (
+                <div className={`chart-container ${className}`}>
+                    {data && data.datasets && data.datasets.length > 0 ? (
+                        <canvas ref={canvasRef}></canvas>
+                    ) : (
+                        <div className="flex items-center justify-center h-full text-gray-500">
+                            <div className="text-center">
+                                <div className="text-4xl mb-2">📊</div>
+                                <div>Sem dados disponíveis</div>
+                                <div className="text-sm">para {title}</div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        };
+
+        // COMPONENTE PRINCIPAL COM INTEGRAÇÃO COMPLETA
         const EsportsMonitoringDashboard = () => {
             const [activeTab, setActiveTab] = useState('overview');
             const [isLoading, setIsLoading] = useState(true);
-            const [data, setData] = useState(null);
+            const [dashboardData, setDashboardData] = useState(null);
+            const [alertAnalytics, setAlertAnalytics] = useState(null);
+            const [detailedAlerts, setDetailedAlerts] = useState(null);
+            const [academicReport, setAcademicReport] = useState(null);
             const [error, setError] = useState(null);
+            const [isCollecting, setIsCollecting] = useState(false);
+            const [apiProblems, setApiProblems] = useState([]);
             
             const apiClient = new EsportsApiClient();
 
-            // Carregar dados da API
-            const loadData = async () => {
+            // FUNÇÃO DE CARREGAMENTO COM TRATAMENTO COMPLETO DE ERROS
+            const loadAllData = async () => {
                 setIsLoading(true);
                 setError(null);
+                setApiProblems([]);
                 
                 try {
-                    console.log('🔄 Carregando dados do dashboard...');
+                    console.log('🔄 Iniciando carregamento completo dos dados...');
                     
-                    const [dashboardData, athletes] = await Promise.all([
-                        apiClient.getDashboardData(),
-                        apiClient.getAthletes()
-                    ]);
+                    // Carregar dados em paralelo
+                    const promises = [
+                        apiClient.getDashboardData().catch(err => ({ error: 'Dashboard', details: err.message })),
+                        apiClient.getAlertAnalytics().catch(err => ({ error: 'Analytics', details: err.message })),
+                        apiClient.getDetailedAlerts({ limit: 20 }).catch(err => ({ error: 'Alerts', details: err.message })),
+                        apiClient.getAcademicReport().catch(err => ({ error: 'Academic', details: err.message }))
+                    ];
 
-                    setData({
-                        dashboard: dashboardData,
-                        athletes: athletes
-                    });
+                    const [dashboard, analytics, alerts, academic] = await Promise.all(promises);
+
+                    // Verificar erros individuais
+                    const errors = [];
+                    const problems = [];
+
+                    if (dashboard.error) {
+                        errors.push(`Dashboard: ${dashboard.details}`);
+                        console.error('❌ Erro no dashboard:', dashboard.details);
+                    } else {
+                        setDashboardData(dashboard);
+                        if (dashboard.api_status?.has_problems) {
+                            problems.push(...dashboard.api_status.problems_detected);
+                        }
+                        console.log('✅ Dashboard carregado');
+                    }
+
+                    if (analytics.error) {
+                        errors.push(`Analytics: ${analytics.details}`);
+                        console.error('❌ Erro no analytics:', analytics.details);
+                    } else {
+                        setAlertAnalytics(analytics);
+                        console.log('✅ Analytics carregado');
+                    }
+
+                    if (alerts.error) {
+                        errors.push(`Alerts: ${alerts.details}`);
+                        console.error('❌ Erro nos alerts:', alerts.details);
+                    } else {
+                        setDetailedAlerts(alerts);
+                        console.log('✅ Alerts carregados');
+                    }
+
+                    if (academic.error) {
+                        errors.push(`Academic: ${academic.details}`);
+                        console.error('❌ Erro no academic:', academic.details);
+                    } else {
+                        setAcademicReport(academic);
+                        console.log('✅ Academic carregado');
+                    }
+
+                    // Definir problemas das APIs
+                    setApiProblems(problems);
+
+                    // Se há muitos erros, mostrar erro geral
+                    if (errors.length >= 3) {
+                        setError(`Múltiplos erros detectados: ${errors.join(', ')}`);
+                    } else if (errors.length > 0) {
+                        console.warn('⚠️ Alguns dados não puderam ser carregados:', errors);
+                    }
                     
-                    console.log('✅ Dados carregados com sucesso!');
+                    console.log('✅ Carregamento concluído!');
+                    
                 } catch (err) {
-                    console.error('❌ Erro ao carregar dados:', err);
-                    setError(err.message);
+                    console.error('❌ Erro crítico no carregamento:', err);
+                    setError(`Erro crítico: ${err.message}`);
                 } finally {
                     setIsLoading(false);
                 }
             };
 
+            // FORÇAR NOVA COLETA
+            const handleForceCollection = async () => {
+                setIsCollecting(true);
+                try {
+                    console.log('🔄 Forçando nova coleta...');
+                    await apiClient.forceCollection();
+                    await loadAllData();
+                    console.log('✅ Nova coleta concluída');
+                } catch (error) {
+                    console.error('❌ Erro na coleta forçada:', error);
+                    setError('Erro ao forçar coleta: ' + error.message);
+                } finally {
+                    setIsCollecting(false);
+                }
+            };
+
             // Carregar dados na inicialização
             useEffect(() => {
-                console.log('🎯 Dashboard montado, carregando dados...');
-                loadData();
+                console.log('🎯 Dashboard montado, iniciando carregamento...');
+                loadAllData();
             }, []);
 
-            // Estado de erro
+            // PREPARAR DADOS PARA GRÁFICOS COM VERIFICAÇÕES
+            const prepareChartData = () => {
+                if (!alertAnalytics?.chart_data) {
+                    console.warn('⚠️ Sem dados de chart_data disponíveis');
+                    return null;
+                }
+
+                const chartData = alertAnalytics.chart_data;
+
+                return {
+                    severity: {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Alto Risco', 'Médio Risco', 'Baixo Risco'],
+                            datasets: [{
+                                data: [
+                                    chartData.severity_distribution?.[3] || 0,
+                                    chartData.severity_distribution?.[2] || 0,
+                                    chartData.severity_distribution?.[1] || 0
+                                ],
+                                backgroundColor: ['#DC2626', '#F59E0B', '#10B981'],
+                                borderWidth: 2,
+                                borderColor: '#ffffff'
+                            }]
+                        },
+                        title: 'Distribuição por Severidade'
+                    },
+
+                    categories: {
+                        type: 'bar',
+                        data: {
+                            labels: Object.keys(chartData.category_distribution || {}),
+                            datasets: [{
+                                label: 'Número de Alertas',
+                                data: Object.values(chartData.category_distribution || {}),
+                                backgroundColor: '#7C3AED',
+                                borderColor: '#5B21B6',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            indexAxis: 'y'
+                        },
+                        title: 'Categorias de Alerta'
+                    },
+
+                    platforms: {
+                        type: 'pie',
+                        data: {
+                            labels: Object.keys(chartData.platform_distribution || {}),
+                            datasets: [{
+                                data: Object.values(chartData.platform_distribution || {}),
+                                backgroundColor: ['#EF4444', '#F59E0B', '#3B82F6'],
+                                borderWidth: 2
+                            }]
+                        },
+                        title: 'Distribuição por Plataforma'
+                    },
+
+                    riskIndicators: {
+                        type: 'radar',
+                        data: {
+                            labels: ['Exposição Menores', 'Risco Regulatório', 'Risco Reputacional', 'Risco Legal'],
+                            datasets: [{
+                                label: 'Indicadores de Risco (%)',
+                                data: [
+                                    alertAnalytics.risk_assessment?.minor_exposure_risk || 0,
+                                    alertAnalytics.risk_assessment?.regulatory_risk || 0,
+                                    alertAnalytics.risk_assessment?.reputational_risk || 0,
+                                    alertAnalytics.risk_assessment?.legal_risk || 0
+                                ],
+                                backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                                borderColor: '#EF4444',
+                                borderWidth: 2,
+                                pointBackgroundColor: '#EF4444'
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                r: {
+                                    beginAtZero: true,
+                                    max: 100
+                                }
+                            }
+                        },
+                        title: 'Indicadores de Risco'
+                    }
+                };
+            };
+
+            const chartConfigs = prepareChartData();
+
+            // ESTADO DE ERRO COM INFORMAÇÕES ÚTEIS
             if (error) {
                 return (
                     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
                         <div className="bg-white rounded-lg shadow-sm p-8 max-w-md w-full text-center">
                             <div className="text-red-500 text-4xl mb-4">⚠️</div>
-                            <h2 className="text-xl font-semibold text-gray-900 mb-2">Erro de Conexão</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mb-2">Problema de Conexão</h2>
                             <p className="text-gray-600 mb-4">{error}</p>
-                            <button 
-                                onClick={loadData}
-                                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                            >
-                                Tentar Novamente
-                            </button>
+                            <div className="space-y-2 mb-4">
+                                <button 
+                                    onClick={loadAllData}
+                                    className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+                                >
+                                    🔄 Tentar Novamente
+                                </button>
+                                <button 
+                                    onClick={() => window.location.reload()}
+                                    className="w-full bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700"
+                                >
+                                    🔃 Recarregar Página
+                                </button>
+                            </div>
+                            <div className="text-xs text-gray-500">
+                                <p>Verifique se o servidor está rodando:</p>
+                                <code className="bg-gray-100 px-2 py-1 rounded">node backend/server-analytics.js</code>
+                            </div>
                         </div>
                     </div>
                 );
             }
 
-            // Estado de loading
+            // ESTADO DE LOADING
             if (isLoading) {
                 return (
                     <div className="loading">
                         <div className="spinner"></div>
+                        <p className="mt-4 text-gray-600">Carregando dados do backend...</p>
+                        <p className="text-sm text-gray-500">Conectando com as APIs...</p>
                     </div>
                 );
             }
@@ -161,109 +484,138 @@
             return (
                 <div className="min-h-screen bg-gray-50 p-4 md:p-6">
                     <div className="max-w-7xl mx-auto">
-                        {/* Header */}
-                        <div className="bg-white rounded-lg shadow-sm p-4 md:p-6 mb-6">
+                        {/* HEADER COM STATUS DAS APIs */}
+                        <div className={`rounded-lg shadow-sm p-4 md:p-6 mb-6 ${
+                            apiProblems.length > 0 ? 'problem-alert' : 'success-alert'
+                        }`}>
                             <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
                                 <div className="mb-4 md:mb-0">
-                                    <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-                                        Monitoramento E-Sports & Apostas 🎮
+                                    <h1 className="text-2xl md:text-3xl font-bold">
+                                        📊 Dashboard E-Sports & Apostas
                                     </h1>
-                                    <p className="text-gray-600 mt-2 text-sm md:text-base">
-                                        Sistema com dados reais - Tese de Doutorado
+                                    <p className="mt-2 text-sm md:text-base opacity-90">
+                                        Sistema de Análise de Alertas - Tese de Doutorado
                                     </p>
+                                    {apiProblems.length > 0 && (
+                                        <div className="mt-2 text-xs">
+                                            ⚠️ {apiProblems.length} problema(s) nas APIs - Usando dados de demonstração
+                                        </div>
+                                    )}
+                                    {apiProblems.length === 0 && (
+                                        <div className="mt-2 text-xs opacity-75">
+                                            ✅ Todas as APIs funcionando - Dados em tempo real
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="flex space-x-3">
                                     <button 
-                                        onClick={loadData}
-                                        className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm"
+                                        onClick={loadAllData}
+                                        disabled={isLoading}
+                                        className="flex items-center px-4 py-2 bg-white bg-opacity-20 text-current rounded-lg hover:bg-opacity-30 text-sm disabled:opacity-50"
                                     >
                                         🔄 Atualizar
+                                    </button>
+                                    <button 
+                                        onClick={handleForceCollection}
+                                        disabled={isCollecting}
+                                        className="flex items-center px-4 py-2 bg-white bg-opacity-20 text-current rounded-lg hover:bg-opacity-30 text-sm disabled:opacity-50"
+                                    >
+                                        {isCollecting ? '⏳' : '🔄'} Nova Coleta
                                     </button>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Status */}
-                        <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
-                            <div className="flex items-center justify-between">
-                                <div>
-                                    <h3 className="text-lg font-semibold">Status do Sistema</h3>
-                                    <p className="text-gray-600 text-sm">APIs conectadas e funcionando</p>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <span className="h-3 w-3 bg-green-400 rounded-full animate-pulse"></span>
-                                    <span className="text-sm text-green-600">Operacional</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Métricas */}
+                        {/* ✅ MÉTRICAS PRINCIPAIS (AJUSTADO PARA TELA MÓVEL) */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                            <div className="metric-card p-4 rounded-lg shadow-sm">
                                 <div className="flex items-center">
-                                    <div className="text-blue-600 text-2xl mr-3">👥</div>
+                                    <div className="text-white text-xl md:text-2xl mr-3">🚨</div>
                                     <div>
-                                        <p className="text-sm font-medium text-gray-500">Atletas</p>
-                                        <p className="text-2xl font-semibold text-gray-900">
-                                            {data?.dashboard?.total_athletes || 0}
+                                        <p className="text-xs md:text-sm font-medium opacity-90">Total Alertas</p>
+                                        <p className="text-xl md:text-2xl font-semibold">
+                                            {alertAnalytics?.executive_summary?.total_alerts || 0}
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                            <div className="bg-red-600 p-4 rounded-lg shadow-sm text-white">
                                 <div className="flex items-center">
-                                    <div className="text-green-600 text-2xl mr-3">💰</div>
+                                    <div className="text-xl md:text-2xl mr-3">⚠️</div>
                                     <div>
-                                        <p className="text-sm font-medium text-gray-500">Patrocínios</p>
-                                        <p className="text-2xl font-semibold text-gray-900">
-                                            {data?.dashboard?.total_sponsorships || 0}
+                                        <p className="text-xs md:text-sm font-medium opacity-90">Críticos</p>
+                                        <p className="text-xl md:text-2xl font-semibold">
+                                            {alertAnalytics?.executive_summary?.critical_alerts || 0}
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                            <div className="bg-orange-600 p-4 rounded-lg shadow-sm text-white">
                                 <div className="flex items-center">
-                                    <div className="text-red-600 text-2xl mr-3">⚠️</div>
+                                    <div className="text-xl md:text-2xl mr-3">👶</div>
                                     <div>
-                                        <p className="text-sm font-medium text-gray-500">Alto Risco</p>
-                                        <p className="text-2xl font-semibold text-gray-900">
-                                            {data?.dashboard?.high_risk_count || 0}
+                                        <p className="text-xs md:text-sm font-medium opacity-90">Exposição Menores</p>
+                                        <p className="text-xl md:text-2xl font-semibold">
+                                            {alertAnalytics?.executive_summary?.minor_exposure_estimate || 0}%
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                            <div className="bg-blue-600 p-4 rounded-lg shadow-sm text-white">
                                 <div className="flex items-center">
-                                    <div className="text-purple-600 text-2xl mr-3">📊</div>
+                                    <div className="text-xl md:text-2xl mr-3">⚖️</div>
                                     <div>
-                                        <p className="text-sm font-medium text-gray-500">Ativos</p>
-                                        <p className="text-2xl font-semibold text-gray-900">
-                                            {data?.dashboard?.active_athletes || 0}
+                                        <p className="text-xs md:text-sm font-medium opacity-90">Compliance</p>
+                                        <p className="text-xl md:text-2xl font-semibold">
+                                            {Math.round(alertAnalytics?.executive_summary?.compliance_score || 0)}%
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Tabs */}
+                        {/* ✅ AVISO SOBRE PROBLEMAS NAS APIs */}
+                        {apiProblems.length > 0 && (
+                            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                                <div className="flex items-start">
+                                    <div className="text-yellow-600 text-xl mr-3">⚠️</div>
+                                    <div className="flex-1">
+                                        <h3 className="font-medium text-yellow-800">Problemas Detectados nas APIs</h3>
+                                        <div className="mt-2 text-sm text-yellow-700">
+                                            <ul className="list-disc list-inside space-y-1">
+                                                {apiProblems.map((problem, index) => (
+                                                    <li key={index}>{problem}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div className="mt-3 text-xs text-yellow-600">
+                                            💡 O sistema está funcionando com dados de demonstração. Para usar dados reais, configure as chaves das APIs no arquivo .env
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* ✅ TABS DE NAVEGAÇÃO (AJUSTADO PARA SCROLL HORIZONTAL) */}
                         <div className="bg-white rounded-lg shadow-sm mb-6">
                             <div className="border-b border-gray-200">
-                                <nav className="flex px-6">
+                                <nav className="flex px-4 md:px-6 overflow-x-auto whitespace-nowrap">
                                     {[
                                         { id: 'overview', name: 'Visão Geral', icon: '📊' },
-                                        { id: 'athletes', name: 'Atletas', icon: '👥' },
-                                        { id: 'insights', name: 'Insights', icon: '🎯' }
+                                        { id: 'charts', name: 'Gráficos dos Alertas', icon: '📈' },
+                                        { id: 'detailed', name: 'Alertas Detalhados', icon: '🔍' },
+                                        { id: 'academic', name: 'Relatório Acadêmico', icon: '🎓' }
                                     ].map((tab) => (
                                         <button
                                             key={tab.id}
                                             onClick={() => setActiveTab(tab.id)}
-                                            className={`flex items-center py-4 px-4 border-b-2 font-medium text-sm ${
+                                            className={`inline-flex items-center py-4 px-4 border-b-2 font-medium text-sm md:text-base ${
                                                 activeTab === tab.id
                                                     ? 'border-blue-500 text-blue-600'
-                                                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                                                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                             }`}
                                         >
                                             <span className="mr-2">{tab.icon}</span>
@@ -274,138 +626,17 @@
                             </div>
                         </div>
 
-                        {/* Conteúdo das Tabs */}
+                        {/* ✅ CONTEÚDO DAS TABS */}
                         <div className="space-y-6">
+                            {/* TAB: VISÃO GERAL */}
                             {activeTab === 'overview' && (
-                                <div className="bg-white p-6 rounded-lg shadow-sm">
-                                    <h3 className="text-lg font-semibold mb-4">📈 Visão Geral do Sistema</h3>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <h4 className="font-medium text-gray-900 mb-3">Estatísticas Principais</h4>
-                                            <ul className="space-y-2 text-sm text-gray-600">
-                                                <li>• Sistema coletando dados em tempo real</li>
-                                                <li>• APIs das redes sociais integradas</li>
-                                                <li>• Análise automatizada de patrocínios</li>
-                                                <li>• Monitoramento de compliance legal</li>
-                                                <li>• Alertas de risco automatizados</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h4 className="font-medium text-gray-900 mb-3">Próximas Funcionalidades</h4>
-                                            <ul className="space-y-2 text-sm text-gray-600">
-                                                <li>• Integração com APIs reais</li>
-                                                <li>• Dashboard de riscos avançado</li>
-                                                <li>• Relatórios acadêmicos</li>
-                                                <li>• Análise demográfica</li>
-                                                <li>• Sistema de alertas em tempo real</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-
-                            {activeTab === 'athletes' && (
-                                <div className="bg-white rounded-lg shadow-sm">
-                                    <div className="p-6 border-b border-gray-200">
-                                        <h3 className="text-lg font-semibold">👥 Atletas Monitorados</h3>
-                                        <p className="text-gray-600 mt-1 text-sm">
-                                            {data?.athletes?.length || 0} atletas brasileiros
-                                        </p>
-                                    </div>
-                                    
-                                    <div className="overflow-x-auto">
-                                        <table className="w-full">
-                                            <thead className="bg-gray-50">
-                                                <tr>
-                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Atleta</th>
-                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Game</th>
-                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Time</th>
-                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Seguidores</th>
-                                                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Risco</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="bg-white divide-y divide-gray-200">
-                                                {data?.athletes?.map((athlete, index) => (
-                                                    <tr key={index} className="hover:bg-gray-50">
-                                                        <td className="px-6 py-4 whitespace-nowrap">
-                                                            <div>
-                                                                <div className="text-sm font-medium text-gray-900">
-                                                                    {athlete.name}
-                                                                </div>
-                                                                <div className="text-sm text-gray-500">
-                                                                    {athlete.nickname}
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                                            {athlete.game}
-                                                        </td>
-                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                                            {athlete.team}
-                                                        </td>
-                                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                                            🐦 {(athlete.social_media?.twitter?.followers / 1000).toFixed(0)}k
-                                                        </td>
-                                                        <td className="px-6 py-4 whitespace-nowrap">
-                                                            <span className={`px-2 py-1 text-xs font-medium rounded-full ${
-                                                                athlete.risk_score >= 70 ? 'text-red-600 bg-red-100' :
-                                                                athlete.risk_score >= 40 ? 'text-yellow-600 bg-yellow-100' :
-                                                                'text-green-600 bg-green-100'
-                                                            }`}>
-                                                                {athlete.risk_score}/100
-                                                            </span>
-                                                        </td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            )}
-
-                            {activeTab === 'insights' && (
-                                <div className="bg-white p-6 rounded-lg shadow-sm">
-                                    <h3 className="text-lg font-semibold mb-4">🎯 Insights Acadêmicos</h3>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <h4 className="font-medium text-gray-900 mb-3">Metodologia</h4>
-                                            <ul className="space-y-2 text-sm text-gray-600">
-                                                <li>• Coleta automatizada via APIs</li>
-                                                <li>• Análise de sentimento em português</li>
-                                                <li>• Detecção de patrocínios gambling</li>
-                                                <li>• Compliance com Lei 14.790/23</li>
-                                                <li>• Monitoramento global de atletas BR</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h4 className="font-medium text-gray-900 mb-3">Descobertas Preliminares</h4>
-                                            <ul className="space-y-2 text-sm text-gray-600">
-                                                <li>• Alto engajamento de público jovem</li>
-                                                <li>• Falta transparência em patrocínios</li>
-                                                <li>• Crescimento skin gambling</li>
-                                                <li>• Necessidade regulamentação específica</li>
-                                                <li>• Atletas BR globalmente distribuídos</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
-                        {/* Footer */}
-                        <div className="mt-8 text-center text-xs text-gray-500">
-                            <p>🎓 Dashboard de Monitoramento E-Sports & Apostas - Tese de Doutorado</p>
-                            <p className="mt-1">Dados em tempo real via APIs • Sistema operacional ✅</p>
-                        </div>
-                    </div>
-                </div>
-            );
-        };
-
-        // Render do app
-        console.log('🎨 Renderizando Dashboard...');
-        ReactDOM.render(<EsportsMonitoringDashboard />, document.getElementById('root'));
-        console.log('✅ Dashboard renderizado com sucesso!');
-    </script>
-</body>
-</html>
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                    {/* Resumo Executivo */}
+                                    <div className="bg-white p-6 rounded-lg shadow-sm">
+                                        <h3 className="text-lg font-semibold mb-4 flex items-center">
+                                            📋 Resumo Executivo
+                                        </h3>
+                                        <div className="space-y-3">
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-600">Atletas Afetados:</span>
+                                                <span className
