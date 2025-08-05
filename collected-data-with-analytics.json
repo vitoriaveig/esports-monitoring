@@ -1,0 +1,1035 @@
+{
+  "athletes": [
+    {
+      "name": "Gabriel Toledo",
+      "nickname": "FalleN",
+      "game": "Counter-Strike",
+      "team": "Imperial",
+      "division": 1,
+      "youtube_username": "fallen",
+      "twitch_username": "fallen",
+      "twitter_username": "FalleNCS",
+      "playing_country": "BR",
+      "social_media": {
+        "youtube": null,
+        "twitch": {
+          "id": "53907586",
+          "login": "fallen",
+          "display_name": "fallen",
+          "followers": 861,
+          "views": 0,
+          "description": "it/she falco from the 303 ^^",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/41898535-6be6-4490-ac03-dc9d42f8f7a1-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-08-04T22:59:35.983Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "53907586",
+            "login": "fallen",
+            "display_name": "fallen",
+            "followers": 861,
+            "views": 0,
+            "description": "it/she falco from the 303 ^^",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/41898535-6be6-4490-ac03-dc9d42f8f7a1-profile_image-300x300.png"
+          },
+          "recent_videos": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-08-04T22:59:35.956Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Erick Santos",
+      "nickname": "aspas",
+      "game": "Valorant",
+      "team": "Leviatán",
+      "division": 1,
+      "youtube_username": "aspaszin",
+      "twitch_username": "aspaszin",
+      "twitter_username": "aspaszin",
+      "playing_country": "CL",
+      "social_media": {
+        "youtube": null,
+        "twitch": {
+          "id": "269503217",
+          "login": "aspaszin",
+          "display_name": "aspaszin",
+          "followers": 1019096,
+          "views": 0,
+          "description": "Campeão Mundial de VALORANT e Bicampeão do VCT AMERICAS.  - aspas@prodigy-agency.gg",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/56adcee0-86f1-4ade-bcd9-8d9bde1c6670-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-08-04T22:59:39.722Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "269503217",
+            "login": "aspaszin",
+            "display_name": "aspaszin",
+            "followers": 1019096,
+            "views": 0,
+            "description": "Campeão Mundial de VALORANT e Bicampeão do VCT AMERICAS.  - aspas@prodigy-agency.gg",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/56adcee0-86f1-4ade-bcd9-8d9bde1c6670-profile_image-300x300.png"
+          },
+          "recent_videos": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-08-04T22:59:39.721Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Gustavo Rossi",
+      "nickname": "Sacy",
+      "game": "Valorant",
+      "team": "Sentinels",
+      "division": 1,
+      "youtube_username": "sacy",
+      "twitch_username": "sacy",
+      "twitter_username": "gustavosacy",
+      "playing_country": "US",
+      "social_media": {
+        "youtube": null,
+        "twitch": {
+          "id": "25116812",
+          "login": "sacy",
+          "display_name": "sacy",
+          "followers": 810400,
+          "views": 0,
+          "description": "NÃO SEI O QUE ESCREVER AQUI DEPOIS EU FAÇO",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5df0c5d3-9589-430f-82b7-72f51a25df4f-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 100,
+      "risk_factors": [
+        "Códigos promocionais identificados"
+      ],
+      "last_update": "2025-08-04T22:59:43.476Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "25116812",
+            "login": "sacy",
+            "display_name": "sacy",
+            "followers": 810400,
+            "views": 0,
+            "description": "NÃO SEI O QUE ESCREVER AQUI DEPOIS EU FAÇO",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/5df0c5d3-9589-430f-82b7-72f51a25df4f-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "MIBR Sacy / VOLTAMOS AS RANKEDS DIARIAS NO RADIANTE, RUMO AO MORANGO - !mibr !noping !pix !pirateswap !emma",
+              "created_at": "2025-08-04T20:05:25Z",
+              "view_count": 30,
+              "description": "",
+              "id": "2531120243"
+            },
+            {
+              "title": "MIBR Sacy / RANKEDS + LOUD x KRU HOJE (VCT AMERICAS 18H) - !mibr !noping !emma !pix",
+              "created_at": "2025-08-03T17:47:48Z",
+              "view_count": 198677,
+              "description": "",
+              "id": "2530172839"
+            },
+            {
+              "title": "MIBR Sacy / VCT AMERICAS 18H (C9 x SEN/MIBR x 100T) + rankeds - !mibr !noping !pix !pirateswap !emma",
+              "created_at": "2025-08-02T18:24:06Z",
+              "view_count": 177943,
+              "description": "",
+              "id": "2529312758"
+            },
+            {
+              "title": "MIBR Sacy / VALORANT + VCT AMERICAS 18H - !mibr !noping !emma",
+              "created_at": "2025-08-01T16:55:08Z",
+              "view_count": 132903,
+              "description": "",
+              "id": "2528321163"
+            },
+            {
+              "title": "MIBR Sacy / DIA TRANQUILO CHILL 0 STRESS - !mibr !noping !emma",
+              "created_at": "2025-07-30T16:58:51Z",
+              "view_count": 82136,
+              "description": "",
+              "id": "2526552677"
+            },
+            {
+              "title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+              "created_at": "2025-07-29T23:33:03Z",
+              "view_count": 44940,
+              "description": "",
+              "id": "2525975150"
+            },
+            {
+              "title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+              "created_at": "2025-07-29T15:35:20Z",
+              "view_count": 49663,
+              "description": "",
+              "id": "2525598117"
+            },
+            {
+              "title": "MIBR Sacy / HOJE TEM JOGO DO MIBR =) - !emma !mibr !noping !pirateswap",
+              "created_at": "2025-07-27T17:26:08Z",
+              "view_count": 204952,
+              "description": "",
+              "id": "2523952858"
+            },
+            {
+              "title": "MIBR Sacy / boa tarde - !mibr !noping !emma !pix",
+              "created_at": "2025-07-26T20:37:14Z",
+              "view_count": 155810,
+              "description": "",
+              "id": "2523223666"
+            },
+            {
+              "title": "MIBR Sacy / RANKEDS + FATE TRIGGER + VCT AMERICAS - !emma !mibr !noping !pix !pirateswap",
+              "created_at": "2025-07-25T15:55:13Z",
+              "view_count": 169401,
+              "description": "",
+              "id": "2522090311"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / VOLTAMOS AS RANKEDS DIARIAS NO RADIANTE, RUMO AO MORANGO - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / VOLTAMOS AS RANKEDS DIARIAS NO RADIANTE, RUMO AO MORANGO - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / VOLTAMOS AS RANKEDS DIARIAS NO RADIANTE, RUMO AO MORANGO - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pirateswap",
+                "video_title": "MIBR Sacy / VOLTAMOS AS RANKEDS DIARIAS NO RADIANTE, RUMO AO MORANGO - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / VOLTAMOS AS RANKEDS DIARIAS NO RADIANTE, RUMO AO MORANGO - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / RANKEDS + LOUD x KRU HOJE (VCT AMERICAS 18H) - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / RANKEDS + LOUD x KRU HOJE (VCT AMERICAS 18H) - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / RANKEDS + LOUD x KRU HOJE (VCT AMERICAS 18H) - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / RANKEDS + LOUD x KRU HOJE (VCT AMERICAS 18H) - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / VCT AMERICAS 18H (C9 x SEN/MIBR x 100T) + rankeds - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / VCT AMERICAS 18H (C9 x SEN/MIBR x 100T) + rankeds - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / VCT AMERICAS 18H (C9 x SEN/MIBR x 100T) + rankeds - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pirateswap",
+                "video_title": "MIBR Sacy / VCT AMERICAS 18H (C9 x SEN/MIBR x 100T) + rankeds - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / VCT AMERICAS 18H (C9 x SEN/MIBR x 100T) + rankeds - !mibr !noping !pix !pirateswap !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / VALORANT + VCT AMERICAS 18H - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / VALORANT + VCT AMERICAS 18H - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / VALORANT + VCT AMERICAS 18H - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / DIA TRANQUILO CHILL 0 STRESS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / DIA TRANQUILO CHILL 0 STRESS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / DIA TRANQUILO CHILL 0 STRESS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / TEMPOS SOMBRIOS - !mibr !noping !emma",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / HOJE TEM JOGO DO MIBR =) - !emma !mibr !noping !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / HOJE TEM JOGO DO MIBR =) - !emma !mibr !noping !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / HOJE TEM JOGO DO MIBR =) - !emma !mibr !noping !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pirateswap",
+                "video_title": "MIBR Sacy / HOJE TEM JOGO DO MIBR =) - !emma !mibr !noping !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / boa tarde - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / boa tarde - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / boa tarde - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / boa tarde - !mibr !noping !emma !pix",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!emma",
+                "video_title": "MIBR Sacy / RANKEDS + FATE TRIGGER + VCT AMERICAS - !emma !mibr !noping !pix !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!mibr",
+                "video_title": "MIBR Sacy / RANKEDS + FATE TRIGGER + VCT AMERICAS - !emma !mibr !noping !pix !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!noping",
+                "video_title": "MIBR Sacy / RANKEDS + FATE TRIGGER + VCT AMERICAS - !emma !mibr !noping !pix !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pix",
+                "video_title": "MIBR Sacy / RANKEDS + FATE TRIGGER + VCT AMERICAS - !emma !mibr !noping !pix !pirateswap",
+                "type": "promotional_code"
+              },
+              {
+                "code": "!pirateswap",
+                "video_title": "MIBR Sacy / RANKEDS + FATE TRIGGER + VCT AMERICAS - !emma !mibr !noping !pix !pirateswap",
+                "type": "promotional_code"
+              }
+            ],
+            "risk_level": "high",
+            "risk_score": 100,
+            "risk_factors": [
+              "Códigos promocionais identificados"
+            ],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-08-04T22:59:43.476Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Kaike Cerato",
+      "nickname": "KSCERATO",
+      "game": "Counter-Strike",
+      "team": "FURIA",
+      "division": 1,
+      "youtube_username": "kscerato",
+      "twitch_username": "kscerato",
+      "twitter_username": "KSCERATO",
+      "playing_country": "US",
+      "social_media": {
+        "youtube": null,
+        "twitch": {
+          "id": "38568044",
+          "login": "kscerato",
+          "display_name": "kscerato",
+          "followers": 80539,
+          "views": 0,
+          "description": "",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/01247541-a2d8-435d-b764-12ce595f2f42-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-08-04T22:59:47.212Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "38568044",
+            "login": "kscerato",
+            "display_name": "kscerato",
+            "followers": 80539,
+            "views": 0,
+            "description": "",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/01247541-a2d8-435d-b764-12ce595f2f42-profile_image-300x300.png"
+          },
+          "recent_videos": [],
+          "sponsorship_analysis": {
+            "videos_analyzed": 0,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-08-04T22:59:47.212Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Felipe Gonçalves",
+      "nickname": "brTT",
+      "game": "League of Legends",
+      "team": "paiN Gaming",
+      "division": 1,
+      "youtube_username": "brttoficial",
+      "twitch_username": "brtt",
+      "twitter_username": "brttoficial",
+      "playing_country": "BR",
+      "social_media": {
+        "youtube": null,
+        "twitch": {
+          "id": "31497918",
+          "login": "brtt",
+          "display_name": "brtt",
+          "followers": 999872,
+          "views": 0,
+          "description": "",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c70194ff-884e-4b35-9848-5fa3bcbd49e5-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-08-04T22:59:50.952Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "31497918",
+            "login": "brtt",
+            "display_name": "brtt",
+            "followers": 999872,
+            "views": 0,
+            "description": "",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/c70194ff-884e-4b35-9848-5fa3bcbd49e5-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "GAMER.",
+              "created_at": "2025-08-04T15:12:23Z",
+              "view_count": 90,
+              "description": "",
+              "id": "2530902993"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-08-03T14:03:15Z",
+              "view_count": 26583,
+              "description": "",
+              "id": "2530018861"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-08-02T17:54:04Z",
+              "view_count": 14500,
+              "description": "",
+              "id": "2529280354"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-08-01T16:53:50Z",
+              "view_count": 19711,
+              "description": "",
+              "id": "2528320083"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-31T16:06:49Z",
+              "view_count": 19253,
+              "description": "",
+              "id": "2527409813"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-30T13:24:10Z",
+              "view_count": 25648,
+              "description": "",
+              "id": "2526418449"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-29T13:58:30Z",
+              "view_count": 33511,
+              "description": "",
+              "id": "2525541298"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-28T15:27:43Z",
+              "view_count": 36427,
+              "description": "",
+              "id": "2524719743"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-27T13:06:10Z",
+              "view_count": 43662,
+              "description": "",
+              "id": "2523780949"
+            },
+            {
+              "title": "GAMER.",
+              "created_at": "2025-07-26T20:09:59Z",
+              "view_count": 13064,
+              "description": "",
+              "id": "2523203167"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 10,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-08-04T22:59:50.951Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    },
+    {
+      "name": "Andrei Piovezan",
+      "nickname": "arT",
+      "game": "Counter-Strike",
+      "team": "FURIA",
+      "division": 1,
+      "youtube_username": "artcs",
+      "twitch_username": "art",
+      "twitter_username": "arTcs",
+      "playing_country": "US",
+      "social_media": {
+        "youtube": null,
+        "twitch": null,
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-08-04T22:59:54.211Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": null,
+        "twitter": null
+      }
+    },
+    {
+      "name": "Matias Delipetro",
+      "nickname": "saadhak",
+      "game": "Valorant",
+      "team": "LOUD",
+      "division": 1,
+      "youtube_username": "saadhak",
+      "twitch_username": "saadhak",
+      "twitter_username": "saadhak",
+      "playing_country": "BR",
+      "social_media": {
+        "youtube": null,
+        "twitch": {
+          "id": "133926538",
+          "login": "saadhak",
+          "display_name": "Saadhak",
+          "followers": 426013,
+          "views": 0,
+          "description": "VALORANT World Champion | Captain and IGL of Karmine Corp ",
+          "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/d649d28a-98ea-407e-a973-96f39a03bbb5-profile_image-300x300.png"
+        },
+        "twitter": null
+      },
+      "sponsorships": [],
+      "risk_score": 0,
+      "risk_factors": [],
+      "last_update": "2025-08-04T22:59:58.082Z",
+      "raw_data": {
+        "youtube": null,
+        "twitch": {
+          "platform": "twitch",
+          "user_data": {
+            "id": "133926538",
+            "login": "saadhak",
+            "display_name": "Saadhak",
+            "followers": 426013,
+            "views": 0,
+            "description": "VALORANT World Champion | Captain and IGL of Karmine Corp ",
+            "profile_image": "https://static-cdn.jtvnw.net/jtv_user_pictures/d649d28a-98ea-407e-a973-96f39a03bbb5-profile_image-300x300.png"
+          },
+          "recent_videos": [
+            {
+              "title": "KC Saadhak | Oi amigos, RANKS :)",
+              "created_at": "2025-07-22T16:09:21Z",
+              "view_count": 20745,
+              "description": "",
+              "id": "2519442211"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, RANKS :)",
+              "created_at": "2025-07-21T18:40:07Z",
+              "view_count": 4201,
+              "description": "",
+              "id": "2518668838"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, RANKS :)",
+              "created_at": "2025-07-20T17:58:14Z",
+              "view_count": 7416,
+              "description": "",
+              "id": "2517771818"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-19T19:54:06Z",
+              "view_count": 10480,
+              "description": "",
+              "id": "2490483700"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-16T19:55:46Z",
+              "view_count": 11711,
+              "description": "",
+              "id": "2487806795"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-15T19:56:28Z",
+              "view_count": 23438,
+              "description": "",
+              "id": "2486984333"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-13T20:16:08Z",
+              "view_count": 539,
+              "description": "",
+              "id": "2485165731"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-13T20:00:09Z",
+              "view_count": 20413,
+              "description": "",
+              "id": "2485151541"
+            },
+            {
+              "title": "KC Saadhak | Oi amigos, voltei :)",
+              "created_at": "2025-06-05T18:52:21Z",
+              "view_count": 4909,
+              "description": "",
+              "id": "2477969254"
+            }
+          ],
+          "sponsorship_analysis": {
+            "videos_analyzed": 9,
+            "videos_with_sponsors": 0,
+            "unique_sponsors": [],
+            "total_sponsor_mentions": 0,
+            "sponsorship_evidence": [],
+            "categories_detected": [],
+            "promo_patterns": [],
+            "risk_level": "low",
+            "risk_score": 0,
+            "risk_factors": [],
+            "has_disclosure": false,
+            "compliance_score": 100,
+            "analysis_timestamp": "2025-08-04T22:59:58.082Z",
+            "platform": "twitch"
+          }
+        },
+        "twitter": null
+      }
+    }
+  ],
+  "dashboard": {
+    "total_athletes": 7,
+    "active_athletes": 7,
+    "total_sponsorships": 0,
+    "high_risk_count": 1,
+    "avg_risk_score": 14,
+    "platform_coverage": {
+      "youtube": 0,
+      "twitch": 6,
+      "twitter": 0
+    },
+    "platform_percentage": {
+      "youtube": 0,
+      "twitch": 86,
+      "twitter": 0
+    },
+    "games_distribution": [
+      {
+        "game": "Counter-Strike",
+        "athletes": 3,
+        "sponsorships": 0
+      },
+      {
+        "game": "Valorant",
+        "athletes": 3,
+        "sponsorships": 0
+      },
+      {
+        "game": "League of Legends",
+        "athletes": 1,
+        "sponsorships": 0
+      }
+    ],
+    "division_analysis": {
+      "division_1": {
+        "total": 7,
+        "high_risk": 1,
+        "avg_risk": 14
+      },
+      "division_2": {
+        "total": 0,
+        "high_risk": 0,
+        "avg_risk": 0
+      }
+    },
+    "last_collection": "2025-08-04T23:00:01.101Z",
+    "collection_method": "multi_platform_api",
+    "data_sources": [
+      "youtube_api",
+      "twitch_api",
+      "twitter_api"
+    ]
+  },
+  "alert_analytics": {
+    "executive_summary": {
+      "total_alerts": 1,
+      "critical_issues": 1,
+      "athletes_affected": 1,
+      "estimated_minor_exposure": 72,
+      "compliance_score": 98
+    },
+    "detailed_analysis": {
+      "summary": {
+        "total_alerts": 1,
+        "unique_athletes": 1,
+        "total_audience_impact": 810400,
+        "minor_exposure_estimate": 72
+      },
+      "distributions": {
+        "severity": {
+          "3": 1
+        },
+        "category": {
+          "Alto Risco Geral": 1
+        },
+        "platform": {
+          "twitch": 1
+        },
+        "game": {
+          "Valorant": 1
+        }
+      },
+      "content_analysis": {
+        "gambling_direct": 0,
+        "skin_gambling": 0,
+        "brazilian_specific": 0,
+        "transparency_issues": 0
+      },
+      "compliance_metrics": {
+        "transparency_score": 100,
+        "safety_score": 0,
+        "overall_compliance": 98
+      },
+      "risk_indicators": {
+        "minor_exposure_risk": 72,
+        "regulatory_risk": 100,
+        "reputational_risk": 0,
+        "legal_risk": 0
+      }
+    },
+    "alert_breakdown": {
+      "severity_distribution": {
+        "3": 1
+      },
+      "category_distribution": {
+        "Alto Risco Geral": 1
+      },
+      "platform_distribution": {
+        "twitch": 1
+      },
+      "temporal_distribution": {
+        "2025-08-04": 1
+      },
+      "athlete_impact": {
+        "Sacy": 1
+      }
+    },
+    "trend_analysis": {
+      "emerging_patterns": [
+        {
+          "pattern": "Crescimento Skin Gambling",
+          "description": "Aumento significativo em patrocínios de skin gambling",
+          "evidence": 0,
+          "trend": "Crescente",
+          "concern_level": "Alto"
+        },
+        {
+          "pattern": "Jogos Brasileiros Específicos",
+          "description": "Foco em jogos populares no Brasil (Tigrinho, etc.)",
+          "evidence": 0,
+          "trend": "Explosivo",
+          "concern_level": "Crítico"
+        },
+        {
+          "pattern": "Atletas no Exterior",
+          "description": "Atletas brasileiros jogando no exterior com patrocínios",
+          "evidence": 0,
+          "trend": "Estável",
+          "concern_level": "Médio"
+        }
+      ],
+      "demographic_insights": {
+        "youth_exposure": "Alto - Estimativa 68% da audiência 13-25 anos",
+        "geographic_spread": "Global - Atletas BR em múltiplas jurisdições",
+        "platform_preference": "Twitch e YouTube dominam exposição"
+      },
+      "regulatory_gaps": [
+        "Falta supervisão jurisdições estrangeiras",
+        "Ausência regulamentação skin gambling",
+        "Proteção inadequada menores",
+        "Transparência publicitária insuficiente"
+      ]
+    },
+    "recommendations": {
+      "immediate_actions": [
+        {
+          "priority": "Crítica",
+          "action": "Implementar verificação idade obrigatória",
+          "rationale": "72% exposição estimada de menores",
+          "timeline": "30 dias"
+        },
+        {
+          "priority": "Alta",
+          "action": "Exigir transparência total em patrocínios",
+          "rationale": "0 violações detectadas",
+          "timeline": "60 dias"
+        },
+        {
+          "priority": "Alta",
+          "action": "Regular skin gambling como modalidade de aposta",
+          "rationale": "Crescimento 0 casos",
+          "timeline": "90 dias"
+        }
+      ],
+      "regulatory_framework": [
+        {
+          "area": "E-sports Específico",
+          "recommendation": "Criar categoria regulatória específica para atletas profissionais",
+          "justification": "Influência desproporcional em audiência jovem"
+        },
+        {
+          "area": "Jurisdição Internacional",
+          "recommendation": "Acordos bilaterais para supervisão de atletas BR no exterior",
+          "justification": "42% dos atletas monitorados competem fora do Brasil"
+        },
+        {
+          "area": "Proteção Menor",
+          "recommendation": "Framework específico para conteúdo direcionado a menores",
+          "justification": "Audiência primária 13-25 anos altamente vulnerável"
+        }
+      ],
+      "academic_contributions": [
+        "Primeira análise sistemática gambling em e-sports no Brasil",
+        "Metodologia replicável para monitoramento automatizado",
+        "Evidências empíricas para formulação política pública",
+        "Base para estudos longitudinais de impacto"
+      ],
+      "next_research_steps": [
+        "Análise impacto psicológico em menores",
+        "Estudo eficácia medidas regulatórias",
+        "Comparação internacional frameworks regulatórios",
+        "Desenvolvimento ferramentas detecção automatizada"
+      ]
+    },
+    "raw_alerts": [
+      {
+        "id": 1,
+        "severity": 4,
+        "severity_label": "Crítico",
+        "category": "Alto Risco Geral",
+        "platform": "twitch",
+        "platform_url": "https://twitch.com/exemplo/1",
+        "description": "Score de risco: 100/100",
+        "detected_keywords": [],
+        "problem_type": "Violação das diretrizes de apostas responsáveis",
+        "timestamp": "2025-08-04T23:00:01.104Z",
+        "athlete_involved": "Gustavo Rossi (@Sacy)",
+        "risk_score": 71,
+        "explanation": "Alerta crítico detectado na plataforma twitch. O atleta Gustavo Rossi tem influência significativa na comunidade de e-sports. Recomenda-se análise manual para verificação de conformidade com a Lei 14.790/23.",
+        "content_sample": "Sacy - Alto Risco em twitch",
+        "follower_count": 820795,
+        "estimated_minor_audience": 35,
+        "engagement_rate": 5
+      }
+    ],
+    "metadata": {
+      "analysis_date": "2025-08-04T23:00:01.109Z",
+      "methodology": "Análise automatizada via APIs + Processamento semântico",
+      "confidence_level": "89%",
+      "sample_size": 7
+    }
+  },
+  "last_update": "2025-08-04T23:00:01.110Z",
+  "api_problems": []
+}

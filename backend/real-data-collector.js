@@ -209,7 +209,7 @@ class RealDataCollector {
             console.log(`🔍 Twitch: Buscando ${athlete.nickname}...`);
             
             const token = await this.getTwitchToken();
-            if (!token) throw new Error('No Twitch token');
+            //if (!token) throw new Error('No Twitch token');
             
             const headers = {
                 'Client-ID': this.twitchClientId,
